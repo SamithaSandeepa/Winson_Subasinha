@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alena - Free Photography Portfolio HTML Template</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <meta name="description" content="description" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav nav-overlay">
+      <div id="menu-btn-close" class="menu-btn menu-btn-close">
+        <span></span>
+      </div>
+      <div class="nav__content">
+        <ul class="nav__list">
+          <li class="nav__list-item active-nav">
+            <a href="index.html" class="hover-target">Home</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="about.html" class="hover-target">About </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="contact.html" class="hover-target">Contact </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="portfolio.html" class="hover-target">Portfolio </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="blog.html" class="hover-target">Blog </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="single.html" class="hover-target">Single </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="styles.html" class="hover-target">Styles </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <header id="header" class="fixed-top">
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg py-4">
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1 class="logo">Vincent Subasinghe</h1>
+              </a>
+            </div>
+
+            <div
+              class="navbar-collapse collapse justify-content-end me-5"
+              id="slide-navbar-collapse"
+            >
+              <ul id="slide-down" class="navbar-nav gap-4">
+                <li><a href="#index.html" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About me</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="social-links">
+              <ul class="list-unstyled d-flex m-0 gap-2">
+                <li>
+                  <a href="#"><i class="icon icon-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon icon-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon icon-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+            <!--social-links-->
+
+            <div id="menu-btn" class="menu-btn"><span></span></div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-title mt-5 py-5">
+      <div class="container">
+        <!-- <h1>Blog Post</h1> -->
+        <!-- </div> -->
+        <!-- <div class="container mt-5"> -->
+        <article id="blogPost">
+          <h1 id="blogTitle"></h1>
+          <p id="blogDate"></p>
+          <img id="blogImage" src="" alt="Blog Image" style="max-width: 100%" />
+          <div id="blogContent"></div>
+        </article>
+      </div>
+    </section>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="jsonfile/data.js"></script>
+    <!-- Path to your blogs data -->
+    <script>
+      // Function to parse query parameters
+      function getQueryParam(param) {
+        console.log(param);
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      // Function to display the blog post
+      function displaySingleBlog(blogId) {
+        const blog = blogsData.find((blog) => blog.id.toString() === blogId);
+        if (blog) {
+          document.getElementById("blogTitle").innerText = blog.title;
+          document.getElementById("blogDate").innerText = blog.date;
+          document.getElementById("blogContent").innerHTML = blog.content; // Use innerHTML for HTML content
+          const imgElement = document.getElementById("blogImage");
+          if (imgElement && blog.image) {
+            imgElement.src = blog.image;
+            imgElement.alt = `Image for ${blog.title}`;
+          }
+        } else {
+          document.getElementById("blogContent").innerText =
+            "Blog post not found.";
+        }
+      }
+
+      // On page load, parse the query string and display the blog
+      document.addEventListener("DOMContentLoaded", () => {
+        const blogId = getQueryParam("id");
+        if (blogId) {
+          displaySingleBlog(blogId);
+        }
+      });
+    </script>
+  </body>
+</html>

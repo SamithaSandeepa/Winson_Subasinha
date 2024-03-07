@@ -36,7 +36,7 @@
 				<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a></li>
 				<li class="nav__list-item"><a href="about.html" class="hover-target">About </a></li>
 				<li class="nav__list-item"><a href="contact.html" class="hover-target">Contact </a></li>
-				<li class="nav__list-item"><a href="portfolio.html" class="hover-target">Portfolio </a></li>
+				<li class="nav__list-item"><a href="gallery.html" class="hover-target">Gallery </a></li>
 				<li class="nav__list-item"><a href="blog.html" class="hover-target">Blog </a></li>
 				<li class="nav__list-item"><a href="single.html" class="hover-target">Single </a></li>
 				<li class="nav__list-item"><a href="styles.html" class="hover-target">Styles </a></li>
@@ -56,10 +56,10 @@
 
 					<div class="navbar-collapse collapse justify-content-end me-5" id="slide-navbar-collapse">
 						<ul id="slide-down" class="navbar-nav gap-4">
-							<li><a href="#billboard" class="nav-link active">Home</a></li>
+							<li><a href="index.html" class="nav-link active">Home</a></li>
 							<li><a href="#about" class="nav-link">About me</a></li>
-							<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-							<li><a href="#blog" class="nav-link">Blog</a></li>
+							<li><a href="gallery.html" class="nav-link">Gallery</a></li>
+							<li><a href="blog.html" class="nav-link">Blog</a></li>
 							<li><a href="#contact" class="nav-link">Contact</a></li>
 						</ul>
 					</div>
@@ -85,14 +85,13 @@
 		</div>
 	</header>
 
-	<section class="page-title mt-5 py-5">
+	<section class="page-title mt-5 py-5" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="d-flex flex-wrap flex-column justify-content-between align-items-center mt-5">
 					<h1 class="display-1">About Us</h1>
 					<nav class="breadcrumb">
-						<a class="breadcrumb-item" href="#">Home</a>
-						<a class="breadcrumb-item" href="#">Pages</a>
+						<a class="breadcrumb-item" href="index.html">Home</a>
 						<span class="breadcrumb-item active" aria-current="page">About Us</span>
 					</nav>
 				</div>
@@ -217,45 +216,71 @@
 
 	<section id="contact" class="contact-detail my-5 bg-secondary">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6 detail-content">
-					<div class="text-content mt-5 pt-5">
-
-						<div class="section-header">
-							<h2 class="section-title">Contact Me</h2>
-						</div><!--section-header-->
-
-						<p>I would love to get suggestions from you.</p>
-
-						<form id="form" class="form-group">
-							<div class="text-input row">
-								<div class="col-md-6 mb-3">
-									<input type="text" name="name" class="form-control bg-transparent border-0 border-bottom" placeholder="Your name">
-								</div>
-								<div class="col-md-6 mb-3">
-									<input type="text" name="E-mail" class="form-control bg-transparent border-0 border-bottom" placeholder="Your E-mail Address">
-								</div>
-								<div class="col-md-12 mb-3">
-									<textarea placeholder="Your Message" class="form-control bg-transparent border-0 border-bottom" placeholder="Message" rows="6"></textarea>
-								</div>
-							</div><!--text-input-->
-						</form>
-
-						<div class="btn-left">
-							<a href="#" class="btn btn-dark px-5 py-3">Send It</a>
-						</div>
-
-					</div><!--text-content-->
+		  <div class="row">
+			<div class="col-md-6 detail-content">
+			  <div class="text-content mt-5 pt-5">
+				<div class="section-header">
+				  <h2 class="section-title">Contact Me</h2>
 				</div>
-				<div class="col-md-6">
-					<figure class="contact-image">
-						<img src="images/contactimg.png" alt="contact">
-					</figure>
+				<!--section-header-->
+  
+				<p>I would love to get suggestions from you.</p>
+  
+				<form id="form" class="form-group">
+				  <div class="text-input row">
+					<div class="col-md-6 mb-3">
+					  <input
+						type="text"
+						name="name"
+						class="form-control bg-transparent border-0 border-bottom"
+						placeholder="Your name"
+					  />
+					</div>
+					<div class="col-md-6 mb-3">
+					  <input
+						type="text"
+						name="E-mail"
+						class="form-control bg-transparent border-0 border-bottom"
+						placeholder="Your E-mail Address"
+					  />
+					</div>
+					<div class="col-md-12 mb-3">
+					  <textarea
+						placeholder="Your Message"
+						class="form-control bg-transparent border-0 border-bottom"
+						placeholder="Message"
+						rows="6"
+					  ></textarea>
+					</div>
+				  </div>
+				  <!--text-input-->
+				</form>
+  
+				<div class="btn-left">
+				  <a href="#" class="btn btn-dark px-5 py-3">Send It</a>
 				</div>
-
+			  </div>
+			  <!--text-content-->
 			</div>
+			<div class="col-md-6 my-auto">
+			  <div class="card border-0">
+				<div class="card-body">
+				  <h5 class="card-title">Contact Details</h5>
+				  <p class="card-text"><strong>Email:</strong> email@example.com</p>
+				  <p class="card-text"><strong>Phone:</strong> (123) 456-7890</p>
+				  <p class="card-text"><strong>Address:</strong> 123 Street Name, City, Country</p>
+				  <div>
+					<a href="#" class="btn btn-primary btn-sm me-2"><i class="icon icon-facebook"></i></a>
+					<a href="#" class="btn btn-primary btn-sm me-2"><i class="icon icon-twitter"></i></a>
+					<a href="#" class="btn btn-primary btn-sm"><i class="icon icon-instagram"></i></a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			</div>
+		  </div>
 		</div>
-	</section>
+	  </section>
 
 	<footer id="footer" class="mt-5 pt-5">
 		<div class="container">
