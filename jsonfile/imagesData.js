@@ -2,7 +2,7 @@ const imagesData = [
   {
     id: 1,
     category: ["fashion", "urban"],
-    imageUrl: "images/portfolio-item1.jpg",
+    imageUrl: "images/portfolio-thumb-1.jpg",
     thumbUrl: "images/portfolio-thumb-1.jpg",
     title: "Sample Caption goes here for Portfolio Item 1.",
   },

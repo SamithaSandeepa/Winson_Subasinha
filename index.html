@@ -17,6 +17,7 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/vendor.css" />
     <link rel="stylesheet" type="text/css" href="fonts/icomoon.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -113,7 +114,7 @@
           <div class="col-md-6">
             <figure class="bannerimg position-relative">
               <div class="text-content" data-aos="fade-in">
-                <h1 class="display-1">vincent subasinghe</h1>
+                <h1 class="display-1">Vincent Subasinghe</h1>
                 <p class="lead">
                   I am a professional photographer. I love to capture moments
                   and make them memorable.
@@ -136,7 +137,7 @@
     </div>
     <!--billboard-->
 
-    <section id="about" class="personal-info my-2 py-2 my-md-5 py-md-5">
+    <section id="about" class="personal-info my-2 py-2 my-md-5 py-md-5" style="background-color: #f4f1e8;">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -220,7 +221,7 @@
           <div class="col-md-6">
             <figure data-aos="zoom-in-left">
               <img
-                src="images/photographer.jpg"
+                src="images\DSC_8353-1.JPG"
                 class="img-fluid"
                 alt="photographer"
               />
@@ -230,7 +231,7 @@
       </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio py-5" id="portfolio" style="background-color: #f4f1e8;">
       <div class="container-fluid">
         <div class="row">
           <div class="section-header text-center">
@@ -300,7 +301,7 @@
     </section>
 
     <!-- contact section -->
-    <section id="contact" class="contact-detail my-5 bg-secondary">
+    <section id="contact" class="contact-detail my-5" style="background-color: #f4f1e8;">
       <div class="container">
         <div class="row">
           <div class="col-md-6 detail-content">
@@ -427,6 +428,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
@@ -474,16 +476,16 @@
         const gridElement = document.querySelector('.grid');
         
         const generateGalleryItemHTML = (item) => {
-          console.log(item);
-          const categoriesClass = item.category.join(' ');
-          return `
-            <div class="col mb-4 portfolio-item ${categoriesClass}">
-              <a href="${item.imageUrl}" class="image-link" title="${item.title}">
+    const categoriesClass = item.category.join(' ');
+    return `
+        <div class="col mb-4 portfolio-item ${categoriesClass}">
+            <a href="${item.imageUrl}" data-title="${item.title}" class="image-link" title="${item.title}">
                 <img src="${item.thumbUrl}" class="img-fluid" alt="portfolio">
-              </a>
-            </div>
-          `;
-        };
+            </a>
+        </div>
+    `;
+};
+
     
         imagesData.forEach(item => {
           gridElement.innerHTML += generateGalleryItemHTML(item);
