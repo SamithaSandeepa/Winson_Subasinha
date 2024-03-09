@@ -8,7 +8,7 @@ const imagesData = [
   },
   {
     id: 2,
-    category: ["fashion", "portrait", "events"],
+    category: ["fashion", "family", "events"],
     imageUrl: "images/portfolio-item2.jpg",
     thumbUrl: "images/portfolio-thumb-2.jpg",
     title: "Sample Caption goes here for Portfolio Item 2.",
@@ -23,7 +23,7 @@ const imagesData = [
   },
   {
     id: 4,
-    category: ["fashion", "portrait", "events"],
+    category: ["fashion", "family", "events"],
     imageUrl: "images/portfolio-item4.jpg",
     thumbUrl: "images/portfolio-thumb-4.jpg",
     title: "Sample Caption goes here for Portfolio Item 4.",
@@ -37,7 +37,7 @@ const imagesData = [
   },
   {
     id: 6,
-    category: ["fashion", "portrait", "events"],
+    category: ["fashion", "family", "events"],
     imageUrl: "images/portfolio-item6.jpg",
     thumbUrl: "images/portfolio-thumb-6.jpg",
     title: "Sample Caption goes here for Portfolio Item 6.",
@@ -51,9 +51,23 @@ const imagesData = [
   },
   {
     id: 8,
-    category: ["fashion", "portrait", "events"],
+    category: ["fashion", "family", "events"],
     imageUrl: "images/portfolio-item8.jpg",
     thumbUrl: "images/portfolio-thumb-8.jpg",
     title: "Sample Caption goes here for Portfolio Item 8.",
+  },
+  {
+    id: 9,
+    category: ["fashion", "family"],
+    imageUrl: "images/portfolio-item001.jpg",
+    thumbUrl: "images/portfolio-thumb-001.jpg",
+    title: "Sample Caption goes here for Portfolio Item 9.",
+  },
+  {
+    id: 10,
+    category: ["fashion", "family", "events"],
+    imageUrl: "images/portfolio-item10.jpg",
+    thumbUrl: "images/portfolio-thumb-10.jpg",
+    title: "Sample Caption goes here for Portfolio Item 10.",
   },
 ];
