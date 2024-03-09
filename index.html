@@ -17,7 +17,10 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/vendor.css" />
     <link rel="stylesheet" type="text/css" href="fonts/icomoon.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -57,7 +60,7 @@
           </li> -->
           <!--  <li class="nav__list-item">
             <a href="#" class="hover-target">Styles </a>
-          </li> --> 
+          </li> -->
         </ul>
       </div>
     </div>
@@ -137,7 +140,11 @@
     </div>
     <!--billboard-->
 
-    <section id="about" class="personal-info my-2 py-2 my-md-5 py-md-5" style="background-color: #f4f1e8;">
+    <section
+      id="about"
+      class="personal-info my-2 py-2 my-md-5 py-md-5"
+      style="background-color: #f4f1e8"
+    >
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -231,7 +238,11 @@
       </div>
     </section>
 
-    <section class="portfolio py-5" id="portfolio" style="background-color: #f4f1e8;">
+    <section
+      class="portfolio py-5"
+      id="portfolio"
+      style="background-color: #f4f1e8"
+    >
       <div class="container-fluid">
         <div class="row">
           <div class="section-header text-center">
@@ -250,27 +261,31 @@
             class="button-group d-flex gap-4 justify-content-center py-5"
           >
             <a
-              href="#"
-              class="text-decoration-none text-uppercase is-checked"
-              data-filter=".fashion"
+              href="javascript:void(0);"
+              class="filter-btn text-decoration-none text-uppercase is-checked"
+              data-filter="fashion"
+              onclick="filterGallery('fashion')"
               >Fashion</a
             >
             <a
-              href="#"
-              class="text-decoration-none text-uppercase"
-              data-filter=".portrait"
+              href="javascript:void(0);"
+              class="filter-btn text-decoration-none text-uppercase"
+              data-filter="portrait"
+              onclick="filterGallery('portrait')"
               >Portrait</a
             >
             <a
-              href="#"
-              class="text-decoration-none text-uppercase"
-              data-filter=".urban"
+              href="javascript:void(0);"
+              class="filter-btn text-decoration-none text-uppercase"
+              data-filter="urban"
+              onclick="filterGallery('urban')"
               >Urban</a
             >
             <a
-              href="#"
-              class="text-decoration-none text-uppercase"
-              data-filter=".events"
+              href="javascript:void(0);"
+              class="filter-btn text-decoration-none text-uppercase"
+              data-filter="events"
+              onclick="filterGallery('events')"
               >Events</a
             >
           </div>
@@ -279,7 +294,7 @@
         <div
           class="grid p-0 clearfix row row-cols-2 row-cols-md-3 row-cols-lg-5"
         >
-        <!-- call the images here -->
+          <!-- call the images here -->
         </div>
       </div>
     </section>
@@ -291,7 +306,7 @@
         </div>
         <!--section-header-->
 
-        <div class="row mb-5 pb-5 post-list" >
+        <div class="row mb-5 pb-5 post-list">
           <!-- blog list -->
         </div>
         <div class="btn-left">
@@ -301,7 +316,11 @@
     </section>
 
     <!-- contact section -->
-    <section id="contact" class="contact-detail my-5" style="background-color: #f4f1e8;">
+    <section
+      id="contact"
+      class="contact-detail my-5"
+      style="background-color: #f4f1e8"
+    >
       <div class="container">
         <div class="row">
           <div class="col-md-6 detail-content">
@@ -353,17 +372,26 @@
             <div class="card border-0">
               <div class="card-body">
                 <h5 class="card-title">Contact Details</h5>
-                <p class="card-text"><strong>Email:</strong> email@example.com</p>
+                <p class="card-text">
+                  <strong>Email:</strong> email@example.com
+                </p>
                 <p class="card-text"><strong>Phone:</strong> (123) 456-7890</p>
-                <p class="card-text"><strong>Address:</strong> 123 Street Name, City, Country</p>
+                <p class="card-text">
+                  <strong>Address:</strong> 123 Street Name, City, Country
+                </p>
                 <div>
-                  <a href="#" class="btn btn-primary btn-sm me-2"><i class="icon icon-facebook"></i></a>
-                  <a href="#" class="btn btn-primary btn-sm me-2"><i class="icon icon-twitter"></i></a>
-                  <a href="#" class="btn btn-primary btn-sm"><i class="icon icon-instagram"></i></a>
+                  <a href="#" class="btn btn-primary btn-sm me-2"
+                    ><i class="icon icon-facebook"></i
+                  ></a>
+                  <a href="#" class="btn btn-primary btn-sm me-2"
+                    ><i class="icon icon-twitter"></i
+                  ></a>
+                  <a href="#" class="btn btn-primary btn-sm"
+                    ><i class="icon icon-instagram"></i
+                  ></a>
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -472,25 +500,52 @@
     </script>
     <script src="jsonfile/imagesData.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const gridElement = document.querySelector('.grid');
-        
+      document.addEventListener("DOMContentLoaded", () => {
+        const gridElement = document.querySelector(".grid");
+
         const generateGalleryItemHTML = (item) => {
-    const categoriesClass = item.category.join(' ');
-    return `
+          const categoriesClass = item.category.join(" ");
+          return `
         <div class="col mb-4 portfolio-item ${categoriesClass}">
             <a href="${item.imageUrl}" data-title="${item.title}" class="image-link" title="${item.title}">
                 <img src="${item.thumbUrl}" class="img-fluid" alt="portfolio">
             </a>
         </div>
     `;
-};
+        };
 
-    
-        imagesData.forEach(item => {
+        imagesData.forEach((item) => {
           gridElement.innerHTML += generateGalleryItemHTML(item);
         });
       });
+    </script>
+    <script>
+      function filterGallery(category) {
+        const items = document.querySelectorAll(".portfolio-item");
+
+        items.forEach((item) => {
+          // Remove the fade-in class to reset animation state
+          item.classList.remove("fade-in");
+
+          if (category === "all" || item.classList.contains(category)) {
+            item.style.display = ""; // Show this item
+
+            // Add the fade-in class to animate items that match the filter
+            setTimeout(() => item.classList.add("fade-in"), 10); // Short delay to ensure the class is added after display change
+          } else {
+            item.style.display = "none"; // Hide this item
+          }
+        });
+
+        // Highlight the active filter (from previous steps)
+        document.querySelectorAll("#filters a").forEach((a) => {
+          if (a.dataset.filter === category) {
+            a.classList.add("is-checked");
+          } else {
+            a.classList.remove("is-checked");
+          }
+        });
+      }
     </script>
   </body>
 </html>

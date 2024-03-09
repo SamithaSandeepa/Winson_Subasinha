@@ -584,6 +584,70 @@ body.nav-active .nav__list-item:nth-child(10) {
   transition-delay: 1.7s;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Updated Filter button styles with underline */
+.filter-btn {
+  position: relative; /* Required for positioning the ::after pseudo-element */
+  padding: 5px 10px;
+  background-color: #f4f1e8; /* Light background, adjust as needed */
+  color: #8e8e8ed3; /* Text color */
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none; /* Remove default underline from links */
+}
+
+.filter-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Adjust based on the desired distance from the button text */
+  height: 2px; /* Thickness of the underline */
+  background-color: #878787; /* Color of the underline */
+  transition: transform 0.3s ease;
+  transform: scaleX(0); /* Start with the underline scaled to 0 width */
+  transform-origin: bottom right;
+}
+
+.filter-btn:hover::after,
+.filter-btn.is-checked::after {
+  transform: scaleX(1); /* Scale the underline to full width on hover/active */
+  transform-origin: bottom left;
+}
+
+/* Optionally, style the hover state differently from the is-checked state if desired */
+.filter-btn:hover,
+.filter-btn:hover {
+  background-color: #7a7a7a00; /* Slightly lighter than the active state */
+}
+
+/* Ensure there's no gap between the buttons and they appear connected */
+#filters {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#filters .filter-btn:not(:last-child) {
+  margin-right: 10px; /* Adjust the space between buttons */
+}
+
 /*--------------------------------------------------------------
 /** 16. Section Title
 --------------------------------------------------------------*/
