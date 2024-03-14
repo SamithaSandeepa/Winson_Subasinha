@@ -603,7 +603,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 .filter-btn {
   position: relative; /* Required for positioning the ::after pseudo-element */
   padding: 5px 10px;
-  background-color: #f4f1e8; /* Light background, adjust as needed */
+  background-color: #f4f1e800; /* Light background, adjust as needed */
   color: #8e8e8ed3; /* Text color */
   font-weight: bold;
   border-radius: 5px;

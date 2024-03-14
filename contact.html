@@ -136,11 +136,16 @@
 
               <p>I would love to get suggestions from you.</p>
 
-              <form id="form" class="form-group">
+              <form
+                id="form"
+                class="form-group"
+                onsubmit="sendEmail(); return false;"
+              >
                 <div class="text-input row">
                   <div class="col-md-6 mb-3">
                     <input
                       type="text"
+                      id="name"
                       name="name"
                       class="form-control bg-transparent border-0 border-bottom"
                       placeholder="Your name"
@@ -148,27 +153,28 @@
                   </div>
                   <div class="col-md-6 mb-3">
                     <input
-                      type="text"
-                      name="E-mail"
+                      type="email"
+                      id="email"
+                      name="email"
                       class="form-control bg-transparent border-0 border-bottom"
                       placeholder="Your E-mail Address"
                     />
                   </div>
                   <div class="col-md-12 mb-3">
                     <textarea
+                      id="message"
                       placeholder="Your Message"
                       class="form-control bg-transparent border-0 border-bottom"
-                      placeholder="Message"
                       rows="6"
                     ></textarea>
                   </div>
                 </div>
-                <!--text-input-->
+                <div class="btn-left">
+                  <button type="submit" class="btn btn-dark px-5 py-3">
+                    Send It
+                  </button>
+                </div>
               </form>
-
-              <div class="btn-left">
-                <a href="#" class="btn btn-dark px-5 py-3">Send It</a>
-              </div>
             </div>
             <!--text-content-->
           </div>
@@ -179,9 +185,12 @@
                 <p class="card-text">
                   <strong>Email:</strong> email@example.com
                 </p>
-                <p class="card-text"><strong>Phone:</strong>(123) 456-7890</p>
                 <p class="card-text">
-                  <strong>Address:</strong> 123 Street Name, City, Country
+                  <strong>Phone:</strong>0773 703 344 / 0716 856 355 / 0767 240
+                  225
+                </p>
+                <p class="card-text">
+                  <strong>Address:</strong> No. 873, Hendiyagala, Sandalankawa.
                 </p>
                 <div>
                   <a href="#" class="btn btn-primary btn-sm me-2"
@@ -212,7 +221,7 @@
                   >contact@yourwebsite.com</a
                 >
               </li>
-              <li>(355)-202-234-0457</li>
+              <li>0773 703 344 / 0716 856 355 / 0767 240 225</li>
             </ul>
           </div>
 
@@ -225,7 +234,7 @@
           </div>
 
           <div class="footer-menu social-links col-md-4">
-            <h3 class="widget-title">My social links</h3>
+            <h3 class="widget-title">Social media links</h3>
             <ul class="list-unstyled d-flex gap-3">
               <li>
                 <a href="#"><i class="icon icon-facebook"></i></a>
@@ -263,5 +272,29 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "samitha.onshape@gmail.com",
+          Password: "687214445539EFCB128CFBDA0EC4826344BF",
+          To: "samitha.onshape@gmail.com",
+          From: "samitha.onshape@gmail.com",
+          // Subject: `${name} sent you a message via contact form`,
+          // Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
+          Subject: "test",
+          Body: "test",
+        }).then((message) => {
+          alert(message); // Show the result in an alert
+          document.getElementById("form").reset();
+        });
+        return false;
+      }
+    </script>
   </body>
 </html>
