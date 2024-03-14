@@ -18,9 +18,9 @@
       crossorigin="anonymous"
     />
     <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
-    rel="stylesheet"
-  />
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/vendor.css" />
     <link rel="stylesheet" type="text/css" href="fonts/icomoon.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -30,6 +30,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
   </head>
 
@@ -91,10 +95,11 @@
                   <a href="#"><i class="icon icon-facebook"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="icon icon-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="icon icon-youtube"></i></a>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Your_Page"
+                    target="_blank"
+                    ><i class="fab fa-wikipedia-w"></i
+                  ></a>
                 </li>
               </ul>
             </div>
@@ -125,15 +130,10 @@
       </div>
     </section>
 
-    <section
-      class="portfolio"
-      id="portfolio"
-    >
+    <section class="portfolio" id="portfolio">
       <div class="container-fluid">
         <div class="row">
-          <div class="section-header text-center">
-            
-          </div>
+          <div class="section-header text-center"></div>
           <!--section-header-->
 
           <div
@@ -143,9 +143,9 @@
             <a
               href="javascript:void(0);"
               class="filter-btn text-decoration-none text-uppercase is-checked"
-              data-filter="fashion"
-              onclick="filterGallery('fashion')"
-              >Fashion</a
+              data-filter="All"
+              onclick="filterGallery('All')"
+              >All</a
             >
             <a
               href="javascript:void(0);"
@@ -180,72 +180,92 @@
     </section>
 
     <section id="contact" class="contact-detail my-5 bg-secondary">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-6 detail-content">
-			  <div class="text-content mt-5 pt-5">
-				<div class="section-header">
-				  <h2 class="section-title">Contact Me</h2>
-				</div>
-				<!--section-header-->
-  
-				<p>I would love to get suggestions from you.</p>
-  
-				<form id="form" class="form-group">
-				  <div class="text-input row">
-					<div class="col-md-6 mb-3">
-					  <input
-						type="text"
-						name="name"
-						class="form-control bg-transparent border-0 border-bottom"
-						placeholder="Your name"
-					  />
-					</div>
-					<div class="col-md-6 mb-3">
-					  <input
-						type="text"
-						name="E-mail"
-						class="form-control bg-transparent border-0 border-bottom"
-						placeholder="Your E-mail Address"
-					  />
-					</div>
-					<div class="col-md-12 mb-3">
-					  <textarea
-						placeholder="Your Message"
-						class="form-control bg-transparent border-0 border-bottom"
-						placeholder="Message"
-						rows="6"
-					  ></textarea>
-					</div>
-				  </div>
-				  <!--text-input-->
-				</form>
-  
-				<div class="btn-left">
-				  <a href="#" class="btn btn-dark px-5 py-3">Send It</a>
-				</div>
-			  </div>
-			  <!--text-content-->
-			</div>
-			<div class="col-md-6 my-auto">
-			  <div class="card border-0">
-				<div class="card-body">
-				  <h5 class="card-title">Contact Details</h5>
-				  <p class="card-text"><strong>Email:</strong> email@example.com</p>
-				  <p class="card-text"><strong>Phone:</strong> 0773 703 344 / 0716 856 355 / 0767 240 225</p>
-				  <p class="card-text"><strong>Address:</strong> No. 873, Hendiyagala, Sandalankawa.</p>
-				  <div>
-					<a href="#" class="btn btn-primary btn-sm me-2"><i class="icon icon-facebook"></i></a>
-					<a href="#" class="btn btn-primary btn-sm me-2"><i class="icon icon-twitter"></i></a>
-					<a href="#" class="btn btn-primary btn-sm"><i class="icon icon-instagram"></i></a>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			</div>
-		  </div>
-		</div>
-	  </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 detail-content">
+            <div class="text-content mt-5 pt-5">
+              <div class="section-header">
+                <h2 class="section-title">Contact Me</h2>
+              </div>
+              <!--section-header-->
+
+              <p>I would love to get suggestions from you.</p>
+
+              <form id="form" class="form-group">
+                <div class="text-input row">
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control bg-transparent border-0 border-bottom"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      name="E-mail"
+                      class="form-control bg-transparent border-0 border-bottom"
+                      placeholder="Your E-mail Address"
+                    />
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <textarea
+                      placeholder="Your Message"
+                      class="form-control bg-transparent border-0 border-bottom"
+                      placeholder="Message"
+                      rows="6"
+                    ></textarea>
+                  </div>
+                </div>
+                <!--text-input-->
+              </form>
+
+              <div class="btn-left">
+                <a href="#" class="btn btn-dark px-5 py-3">Send It</a>
+              </div>
+            </div>
+            <!--text-content-->
+          </div>
+          <div class="col-md-6 my-auto">
+            <div class="card border-0">
+              <div class="card-body">
+                <h5 class="card-title">Contact Details</h5>
+                <p class="card-text">
+                  <strong>Email:</strong> email@example.com
+                </p>
+                <p class="card-text">
+                  <strong>Phone:</strong> 0773 703 344 / 0716 856 355 / 0767 240
+                  225
+                </p>
+                <p class="card-text">
+                  <strong>Address:</strong> No. 873, Hendiyagala, Sandalankawa.
+                </p>
+                <div>
+                  <!-- Facebook Button -->
+                  <a
+                    href="https://www.facebook.com/YourPage"
+                    class="btn btn-primary btn-sm me-2 social-icon-btn"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+
+                  <!-- Wikipedia Button -->
+                  <a
+                    href="https://en.wikipedia.org/wiki/Your_Page"
+                    class="btn btn-primary btn-sm me-2 social-icon-btn"
+                    target="_blank"
+                  >
+                    <i class="fab fa-wikipedia-w"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer id="footer" class="mt-5 pt-5">
       <div class="container">
@@ -263,10 +283,9 @@
           </div>
 
           <div class="footer-menu col-md-4">
-            <h3 class="widget-title">where’s my office?</h3>
+            <h3 class="widget-title">Address</h3>
             <ul class="list-unstyled" id="footer-menu">
-              <li>2489 Locust Court, Los Angeles</li>
-              <li>3927 Red Maple Drive, Los Angeles</li>
+              <li>No. 873, Hendiyagala, Sandalankawa.</li>
             </ul>
           </div>
 
@@ -277,10 +296,11 @@
                 <a href="#"><i class="icon icon-facebook"></i></a>
               </li>
               <li>
-                <a href="#"><i class="icon icon-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="icon icon-instagram"></i></a>
+                <a
+                  href="https://en.wikipedia.org/wiki/Your_Page"
+                  target="_blank"
+                  ><i class="fab fa-wikipedia-w"></i
+                ></a>
               </li>
             </ul>
           </div>
