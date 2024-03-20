@@ -89,6 +89,13 @@ a {
   text-decoration: none;
   transition: all 0.3s ease-out;
 }
+.lead {
+  font-size: 16px;
+}
+
+.description {
+  text-align: justify;
+}
 
 /* container fluid */
 .container-fluid {
@@ -703,7 +710,7 @@ header {
 --------------------------------------------------------------*/
 #billboard .text-content {
   position: absolute;
-  left: calc(-70vw / 2);
+  left: calc(-80vw / 2);
   top: 25vh;
   max-width: 520px;
   z-index: 2;
