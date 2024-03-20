@@ -710,7 +710,7 @@ header {
 --------------------------------------------------------------*/
 #billboard .text-content {
   position: absolute;
-  left: calc(-80vw / 2);
+  /* left: calc(0vw); */
   top: 25vh;
   max-width: 520px;
   z-index: 2;
