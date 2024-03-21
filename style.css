@@ -182,6 +182,11 @@ a {
   --bs-breadcrumb-item-padding-x: 1em;
 }
 
+.nav-link {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
 /* text white */
 .text-white {
   --heading-color: var(--bs-light);
