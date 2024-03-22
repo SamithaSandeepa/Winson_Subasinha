@@ -187,6 +187,13 @@ a {
   font-size: 1.1rem;
 }
 
+.address-container {
+  display: flex;
+}
+
+.column {
+  flex: 1; /* Each column takes up equal space */
+}
 /* text white */
 .text-white {
   --heading-color: var(--bs-light);
