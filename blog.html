@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Vinson Subhasinha</title>
+    <title>Vincent Subhasinha</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -91,11 +91,14 @@
             <div class="social-links">
               <ul class="list-unstyled d-flex m-0 gap-2">
                 <li>
-                  <a href="#"><i class="icon icon-facebook"></i></a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61557207655273"
+                    ><i class="icon icon-facebook"></i
+                  ></a>
                 </li>
                 <li>
                   <a
-                    href="https://en.wikipedia.org/wiki/Your_Page"
+                    href="https://en.wikipedia.org/wiki/Draft:Vincent_Subasinghe"
                     target="_blank"
                     ><i class="fab fa-wikipedia-w"></i
                   ></a>
@@ -230,7 +233,7 @@
 
                   <!-- Wikipedia Button -->
                   <a
-                    href="https://en.wikipedia.org/wiki/Your_Page"
+                    href="https://en.wikipedia.org/wiki/Draft:Vincent_Subasinghe"
                     class="btn btn-primary btn-sm me-2 social-icon-btn"
                     target="_blank"
                   >
@@ -282,7 +285,7 @@
               </li>
               <li>
                 <a
-                  href="https://en.wikipedia.org/wiki/Your_Page"
+                  href="https://en.wikipedia.org/wiki/Draft:Vincent_Subasinghe"
                   target="_blank"
                   ><i class="fab fa-wikipedia-w"></i
                 ></a>
@@ -325,15 +328,16 @@
         const blogListElement = document.querySelector(".post-list");
         blogListElement.innerHTML = ""; // Clear existing blogs
 
+        // <span class="post-category">${blog.category}</span> /
         blogsToShow.forEach((blog) => {
           const blogItemHtml = `
             <article class="post-item mb-5 pb-5">
               <div class="post-image">
-                <a href="single-post.html?id=${blog.id}"><img src="${blog.image}" class="img-fluid" alt="${blog.category}"></a>
+                <a href="single-post.html?id=${blog.id}"><img src="${blog.image}" class="img-fluid"></a>
               </div>
               <div class="post-content">
                 <div class="post-meta text-uppercase mt-5">
-                  <span class="post-category">${blog.category}</span> /
+                  
                   <span class="meta-date">${blog.date}</span>
                 </div>
                 <h2 class="post-title"><a href="single-post.html">${blog.title}</a></h2>

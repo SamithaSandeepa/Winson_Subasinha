@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Vinson Subhasinha</title>
+    <title>Vincent Subhasinha</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -100,11 +100,14 @@
             <div class="social-links">
               <ul class="list-unstyled d-flex m-0 gap-2">
                 <li>
-                  <a href="#"><i class="icon icon-facebook"></i></a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61557207655273"
+                    ><i class="icon icon-facebook"></i
+                  ></a>
                 </li>
                 <li>
                   <a
-                    href="https://en.wikipedia.org/wiki/Your_Page"
+                    href="https://en.wikipedia.org/wiki/Draft:Vincent_Subasinghe"
                     target="_blank"
                     ><i class="fab fa-wikipedia-w"></i
                   ></a>
@@ -395,7 +398,7 @@
           <div class="col-md-6 my-auto">
             <figure data-aos="zoom-in-left">
               <img
-                src="images\DSC_8353-1.JPG"
+                src="images\main\sandalanka_sanda.jpg"
                 class="img-fluid"
                 alt="photographer"
               />
@@ -675,7 +678,7 @@
 
                   <!-- Wikipedia Button -->
                   <a
-                    href="https://en.wikipedia.org/wiki/Your_Page"
+                    href="https://en.wikipedia.org/wiki/Draft:Vincent_Subasinghe"
                     class="btn btn-primary btn-sm me-2 social-icon-btn"
                     target="_blank"
                   >
@@ -727,7 +730,7 @@
               </li>
               <li>
                 <a
-                  href="https://en.wikipedia.org/wiki/Your_Page"
+                  href="https://en.wikipedia.org/wiki/Draft:Vincent_Subasinghe"
                   target="_blank"
                   ><i class="fab fa-wikipedia-w"></i
                 ></a>
@@ -780,14 +783,14 @@
                 class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center"
               >
                 <span class="meta-date">${blog.date}</span>
-                <span class="meta-category"><a href="#">${blog.category}</a></span>
+                
               </div>
               <h3 class="post-title mb-3">
                 <a href="single-post.html?id=${blog.id}">${blog.title}</a>
               </h3>
-              <p>
-                ${blog.content}
-              </p>
+              <div>
+                ${blog.summary}...
+              </div>
             </div>
           </div>
           `;
@@ -795,6 +798,7 @@
         });
       }
 
+      // <span class="meta-category"><a href="#">${blog.category}</a></span>
       document.addEventListener("DOMContentLoaded", () => {
         displayBlogs(1);
       });
