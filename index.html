@@ -555,17 +555,17 @@
             <a
               href="javascript:void(0);"
               class="filter-btn text-decoration-none text-uppercase"
-              data-filter="urban"
-              onclick="filterGallery('urban')"
-              >Urban</a
+              data-filter="life"
+              onclick="filterGallery('life')"
+              >Life</a
             >
-            <a
+            <!-- <a
               href="javascript:void(0);"
               class="filter-btn text-decoration-none text-uppercase"
               data-filter="events"
               onclick="filterGallery('events')"
               >Events</a
-            >
+            > -->
           </div>
         </div>
 
@@ -827,16 +827,23 @@
     <script>
       function filterGallery(category) {
         const items = document.querySelectorAll(".portfolio-item");
+        let count = 0; // Counter for displayed items
 
         items.forEach((item) => {
+          console.log(item);
           // Remove the fade-in class to reset animation state
           item.classList.remove("fade-in");
 
-          if (category === "all" || item.classList.contains(category)) {
+          if (
+            (category === "all" || item.classList.contains(category)) &&
+            count < 10
+          ) {
             item.style.display = ""; // Show this item
 
             // Add the fade-in class to animate items that match the filter
             setTimeout(() => item.classList.add("fade-in"), 10); // Short delay to ensure the class is added after display change
+
+            count++; // Increment the counter only if the item is displayed
           } else {
             item.style.display = "none"; // Hide this item
           }
