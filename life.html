@@ -87,10 +87,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="d-flex flex-wrap flex-column justify-content-between align-items-center mt-5">
-					<h1 class="display-1">About Us</h1>
+					<h1 class="display-1">Life</h1>
 					<nav class="breadcrumb">
 						<a class="breadcrumb-item" href="index.html">Home</a>
-						<span class="breadcrumb-item active" aria-current="page">About Us</span>
+						<span class="breadcrumb-item active" aria-current="page">Sandalanka Sanda</span>
 					</nav>
 				</div>
 			</div>
@@ -176,42 +176,18 @@
 		</div>
 	</section>
 
-	<!-- <section class="testimonials py-5">
-		<div class="container">
-			<div class="row">
-				<div class="section-header text-center my-5">
-					<h3>Customer Reviews</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="testimonial-item text-center">
-						<blockquote>
-							<p>“Consequat pharetra at magna imperdiet cursus ac faucibus sit libero.”</p>
-							<div class="review-title text-uppercase">Denim craze</div>
-						</blockquote>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="testimonial-item text-center">
-						<blockquote>
-							<p>“Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor
-								id in.”</p>
-							<div class="review-title text-uppercase">uptop</div>
-						</blockquote>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="testimonial-item text-center">
-						<blockquote>
-							<p>“Consequat pharetra at magna imperdiet cursus ac faucibus sit libero.”</p>
-							<div class="review-title text-uppercase">casual way</div>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
+	<section
+      class="portfolio py-5"
+      id="portfolio"
+    >
+      <div class="container-fluid">
+        <div
+          class="grid p-0 clearfix row row-cols-2 row-cols-md-3 row-cols-lg-5"
+        >
+          <!-- call the images here -->
+        </div>
+      </div>
+    </section>
 
 	<!-- contact section -->
     <section id="contact" class="contact-detail my-5" style="background-color: #f4f1e8;">
@@ -340,9 +316,68 @@
 		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 		crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-
+	<script src="jsonfile/imagesData.js"></script>
+    <script>
+		document.addEventListener("DOMContentLoaded", () => {
+		  const gridElement = document.querySelector(".grid");
+	  
+		  const generateGalleryItemHTML = (item) => {
+			const categoriesClass = item.category.join(" ");
+			return `
+			  <div class="col mb-4 portfolio-item ${categoriesClass}">
+				  <a href="${item.imageUrl}" data-title="${item.title}" class="image-link" title="${item.title}">
+					  <img src="${item.thumbUrl}" class="img-fluid" alt="${item.title}">
+				  </a>
+			  </div>
+			`;
+		  };
+	  
+		  imagesData.forEach((item) => {
+			if (item.category.includes("life")) {
+			  gridElement.innerHTML += generateGalleryItemHTML(item);
+			}
+		  });
+		});
+	  </script>
+	  
+	  <script>
+		function filterGallery(category) {
+		  const items = document.querySelectorAll(".portfolio-item");
+		  let count = 0; // Counter for displayed items
+	  
+		  items.forEach((item) => {
+			console.log(item);
+			// Remove the fade-in class to reset animation state
+			item.classList.remove("fade-in");
+	  
+			if (category === "life" && item.classList.contains(category) && count < 10) {
+			  item.style.display = ""; // Show this item
+			  // Add the fade-in class to animate items that match the filter
+			  setTimeout(() => item.classList.add("fade-in"), 10); // Short delay to ensure the class is added after display change
+			  count++; // Increment the counter only if the item is displayed
+			} else {
+			  item.style.display = "none"; // Hide this item
+			}
+		  });
+	  
+		  // Highlight the active filter (from previous steps)
+		  document.querySelectorAll("#filters a").forEach((a) => {
+			if (a.dataset.filter === category) {
+			  a.classList.add("is-checked");
+			} else {
+			  a.classList.remove("is-checked");
+			}
+		  });
+		}
+	  </script>
 </body>
 
 </html>
