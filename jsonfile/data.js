@@ -28,9 +28,10 @@ const blogsData = [
     <p>මෙම සැමරුමට සමගාමීව අභිනන්දන ගීතය එළිදැක්වීමටත් වෙඩ් අඩවිය උඩුගත කිරීමටත් තැපැල් මුද්දරය නිකුත් කිරීම වැනි අංග ගණනාවක් ශ්‍රීධර වින්සන්ට් සුබසිංහ අනුස්මරණ පදනමේ මූලිකත්වයෙන් සංවිධානය කර ඇත. </p>
 
     <br/>
+    <i>
     ආනන්ද කරුණාරත්න<br/>
     සභාපති, ශ්‍රීධර වින්සන්ට් සුබසිංහ අනුස්මරණ පදනම
-
+    </i>
     </div>`,
   },
   {
@@ -113,12 +114,12 @@ const blogsData = [
     <p></p>
     <p></p>`,
   },
-  {
-    id: 4,
-    title: "Other",
-    date: "23 Mar, 2024",
-    // category: "",
-    image: "images/portfolio-item17.jpg",
-    content: "vel pretium suspendisse ultrices...",
-  },
+  // {
+  //   id: 4,
+  //   title: "Other",
+  //   date: "23 Mar, 2024",
+  //   // category: "",
+  //   image: "images/portfolio-item17.jpg",
+  //   content: "vel pretium suspendisse ultrices...",
+  // },
 ];

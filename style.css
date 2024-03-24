@@ -754,3 +754,10 @@ header {
     margin-top: 0;
   }
 }
+
+.bannerimg {
+  max-width: 100%; /* Ensure the image takes full width if needed */
+  position: relative; /* Adjust if necessary for layout */
+  margin-top: 20px;
+  /* Add more styling as needed */
+}
