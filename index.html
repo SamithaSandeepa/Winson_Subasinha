@@ -314,9 +314,7 @@
               </div>
 
               <div class="btn-left">
-                <a href="sandalanka_sanda.html" class="btn btn-dark px-5 py-3"
-                  >Read More</a
-                >
+                <a href="#" class="btn btn-dark px-5 py-3">Read More</a>
               </div>
             </div>
             <!--text-content-->
@@ -421,9 +419,7 @@
               </div>
 
               <div class="btn-left">
-                <a href="sandalanka_sanda.html" class="btn btn-dark px-5 py-3"
-                  >Read More</a
-                >
+                <a href="#" class="btn btn-dark px-5 py-3">Read More</a>
               </div>
             </div>
             <!--text-content-->
@@ -584,6 +580,7 @@
                       name="name"
                       class="form-control bg-transparent border-0 border-bottom"
                       placeholder="Your name"
+                      id="name"
                     />
                   </div>
                   <div class="col-md-6 mb-3">
@@ -592,6 +589,7 @@
                       name="E-mail"
                       class="form-control bg-transparent border-0 border-bottom"
                       placeholder="Your E-mail Address"
+                      id="email"
                     />
                   </div>
                   <div class="col-md-12 mb-3">
@@ -600,6 +598,7 @@
                       class="form-control bg-transparent border-0 border-bottom"
                       placeholder="Message"
                       rows="6"
+                      id="message"
                     ></textarea>
                   </div>
                 </div>
@@ -607,7 +606,9 @@
               </form>
 
               <div class="btn-left">
-                <a href="#" class="btn btn-dark px-5 py-3">Send It</a>
+                <button class="btn btn-dark px-5 py-3" onclick="sendEmail()">
+                  Send It
+                </button>
               </div>
             </div>
             <!--text-content-->
@@ -615,7 +616,9 @@
           <div class="col-md-6 my-auto">
             <div class="card border-0">
               <div class="card-body">
-                <h5 class="card-title">Contact Details</h5>
+                <h5 class="card-title" style="margin-bottom: 10px">
+                  Contact Details
+                </h5>
                 <p class="card-text">
                   <strong>Email:</strong> info@vincentsubasinghe.info
                 </p>
@@ -743,22 +746,22 @@
 
         blogsToShow.forEach((blog) => {
           const blogItemHtml = `
-            <div class="col-md-6">
+          <div class="col-md-6">
             <div class="post-content mb-5">
               <div
-                class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center"
+              class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center"
               >
-                <span class="meta-date">${blog.date}</span>
-                
+              <span class="meta-date">${blog.date}</span>
+              
               </div>
               <h3 class="post-title mb-3">
                 <a href="single-post.html?id=${blog.id}">${blog.title}</a>
-              </h3>
+                </h3>
               <div>
                 ${blog.summary}...
               </div>
-            </div>
-          </div>
+              </div>
+              </div>
           `;
           blogListElement.innerHTML += blogItemHtml;
         });
@@ -777,12 +780,12 @@
         const generateGalleryItemHTML = (item) => {
           const categoriesClass = item.category.join(" ");
           return `
-        <div class="col mb-4 portfolio-item ${categoriesClass}">
+          <div class="col mb-4 portfolio-item ${categoriesClass}">
             <a href="${item.imageUrl}" data-title="${item.title}" class="image-link" title="${item.title}">
-                <img src="${item.thumbUrl}" class="img-fluid" alt="portfolio">
-            </a>
-        </div>
-    `;
+              <img src="${item.thumbUrl}" class="img-fluid" alt="portfolio">
+              </a>
+              </div>
+              `;
         };
 
         imagesData.forEach((item) => {
@@ -824,6 +827,18 @@
           }
         });
       }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="js/email.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "SXJ-pi3nfkiT6KdJP",
+        });
+      })();
     </script>
   </body>
 </html>

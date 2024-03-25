@@ -651,6 +651,7 @@
                       name="name"
                       class="form-control bg-transparent border-0 border-bottom"
                       placeholder="Your name"
+                      id="name"
                     />
                   </div>
                   <div class="col-md-6 mb-3">
@@ -659,6 +660,7 @@
                       name="E-mail"
                       class="form-control bg-transparent border-0 border-bottom"
                       placeholder="Your E-mail Address"
+                      id="email"
                     />
                   </div>
                   <div class="col-md-12 mb-3">
@@ -667,6 +669,7 @@
                       class="form-control bg-transparent border-0 border-bottom"
                       placeholder="Message"
                       rows="6"
+                      id="message"
                     ></textarea>
                   </div>
                 </div>
@@ -674,7 +677,9 @@
               </form>
 
               <div class="btn-left">
-                <a href="#" class="btn btn-dark px-5 py-3">Send It</a>
+                <button class="btn btn-dark px-5 py-3" onclick="sendEmail()">
+                  Send It
+                </button>
               </div>
             </div>
             <!--text-content-->

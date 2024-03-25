@@ -193,49 +193,53 @@
     <section id="contact" class="contact-detail my-5" style="background-color: #f4f1e8;">
 		<div class="container">
 		  <div class="row">
-			<div class="col-md-6 detail-content">
-			  <div class="text-content mt-5 pt-5">
-				<div class="section-header">
-				  <h2 class="section-title">Contact</h2>
-				</div>
-				<!--section-header-->
-  
-				<p>I would love to get suggestions from you.</p>
-  
-				<form id="form" class="form-group">
-				  <div class="text-input row">
-					<div class="col-md-6 mb-3">
-					  <input
-						type="text"
-						name="name"
-						class="form-control bg-transparent border-0 border-bottom"
-						placeholder="Your name"
-					  />
-					</div>
-					<div class="col-md-6 mb-3">
-					  <input
-						type="text"
-						name="E-mail"
-						class="form-control bg-transparent border-0 border-bottom"
-						placeholder="Your E-mail Address"
-					  />
-					</div>
-					<div class="col-md-12 mb-3">
-					  <textarea
-						placeholder="Your Message"
-						class="form-control bg-transparent border-0 border-bottom"
-						placeholder="Message"
-						rows="6"
-					  ></textarea>
-					</div>
-				  </div>
-				  <!--text-input-->
-				</form>
-  
-				<div class="btn-left">
-				  <a href="#" class="btn btn-dark px-5 py-3">Send It</a>
-				</div>
-			  </div>
+			<div class="text-content mt-5 pt-5">
+              <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+              </div>
+              <!--section-header-->
+
+              <p>I would love to get suggestions from you.</p>
+
+              <form id="form" class="form-group">
+                <div class="text-input row">
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control bg-transparent border-0 border-bottom"
+                      placeholder="Your name"
+                      id="name"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      name="E-mail"
+                      class="form-control bg-transparent border-0 border-bottom"
+                      placeholder="Your E-mail Address"
+                      id="email"
+                    />
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <textarea
+                      placeholder="Your Message"
+                      class="form-control bg-transparent border-0 border-bottom"
+                      placeholder="Message"
+                      rows="6"
+                      id="message"
+                    ></textarea>
+                  </div>
+                </div>
+                <!--text-input-->
+              </form>
+
+              <div class="btn-left">
+                <button class="btn btn-dark px-5 py-3" onclick="sendEmail()">
+                  Send It
+                </button>
+              </div>
+            </div>
 			  <!--text-content-->
 			</div>
 			<div class="col-md-6 my-auto">
@@ -377,6 +381,14 @@
 			}
 		  });
 		}
+	  </script>
+	  <script src="js/email.js"></script>
+	  <script type="text/javascript">
+		(function () {
+		  emailjs.init({
+			publicKey: "SXJ-pi3nfkiT6KdJP",
+		  });
+		})();
 	  </script>
 </body>
 

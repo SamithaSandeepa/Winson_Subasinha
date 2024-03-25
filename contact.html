@@ -132,7 +132,11 @@
       </div>
     </section>
 
-    <section id="contact" class="contact-detail my-5 bg-secondary">
+    <section
+      id="contact"
+      class="contact-detail my-5"
+      style="background-color: #f4f1e8"
+    >
       <div class="container">
         <div class="row">
           <div class="col-md-6 detail-content">
@@ -144,52 +148,53 @@
 
               <p>I would love to get suggestions from you.</p>
 
-              <form
-                id="form"
-                class="form-group"
-                onsubmit="sendEmail(); return false;"
-              >
+              <form id="form" class="form-group">
                 <div class="text-input row">
                   <div class="col-md-6 mb-3">
                     <input
                       type="text"
-                      id="name"
                       name="name"
                       class="form-control bg-transparent border-0 border-bottom"
                       placeholder="Your name"
+                      id="name"
                     />
                   </div>
                   <div class="col-md-6 mb-3">
                     <input
-                      type="email"
-                      id="email"
-                      name="email"
+                      type="text"
+                      name="E-mail"
                       class="form-control bg-transparent border-0 border-bottom"
                       placeholder="Your E-mail Address"
+                      id="email"
                     />
                   </div>
                   <div class="col-md-12 mb-3">
                     <textarea
-                      id="message"
                       placeholder="Your Message"
                       class="form-control bg-transparent border-0 border-bottom"
+                      placeholder="Message"
                       rows="6"
+                      id="message"
                     ></textarea>
                   </div>
                 </div>
-                <div class="btn-left">
-                  <button type="submit" class="btn btn-dark px-5 py-3">
-                    Send It
-                  </button>
-                </div>
+                <!--text-input-->
               </form>
+
+              <div class="btn-left">
+                <button class="btn btn-dark px-5 py-3" onclick="sendEmail()">
+                  Send It
+                </button>
+              </div>
             </div>
             <!--text-content-->
           </div>
           <div class="col-md-6 my-auto">
             <div class="card border-0">
               <div class="card-body">
-                <h5 class="card-title">Contact Details</h5>
+                <h5 class="card-title" style="margin-bottom: 10px">
+                  Contact Details
+                </h5>
                 <p class="card-text">
                   <strong>Email:</strong> info@vincentsubasinghe.info
                 </p>
@@ -319,6 +324,14 @@
         });
         return false;
       }
+    </script>
+    <script src="js/email.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "SXJ-pi3nfkiT6KdJP",
+        });
+      })();
     </script>
   </body>
 </html>
