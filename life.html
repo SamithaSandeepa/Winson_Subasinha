@@ -1,8 +1,6 @@
-
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Vincent Subhasinha</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,193 +12,221 @@
     <meta name="description" content="description" />
     <link rel="icon" href="images/logo.webp" type="image/x-icon" />
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/vendor.css">
-	<link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-		rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
 
-</head>
+  <body>
+    <div class="nav nav-overlay">
+      <div id="menu-btn-close" class="menu-btn menu-btn-close">
+        <span></span>
+      </div>
+      <div class="nav__content">
+        <ul class="nav__list">
+          <li class="nav__list-item active-nav">
+            <a href="index.html" class="hover-target">Home</a>
+          </li>
+          <!-- <li class="nav__list-item"><a href="about.html" class="hover-target">About </a></li> -->
+          <li class="nav__list-item">
+            <a href="contact.html" class="hover-target">Contact </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="gallery.html" class="hover-target">Gallery </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="blog.html" class="hover-target">Blog </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-<body>
-
-	<div class="nav nav-overlay">
-		<div id="menu-btn-close" class="menu-btn menu-btn-close"><span></span></div>
-		<div class="nav__content">
-			<ul class="nav__list">
-				<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a></li>
-				<!-- <li class="nav__list-item"><a href="about.html" class="hover-target">About </a></li> -->
-				<li class="nav__list-item"><a href="contact.html" class="hover-target">Contact </a></li>
-				<li class="nav__list-item"><a href="gallery.html" class="hover-target">Gallery </a></li>
-				<li class="nav__list-item"><a href="blog.html" class="hover-target">Blog </a></li>
-			</ul>
-		</div>
-	</div>
-
-	<header id="header" class="fixed-top">
-		<div class="container-fluid">
-			<div class="row">
-				<nav class="navbar navbar-expand-lg py-4">
-					<div class="navbar-brand">
-						<a href="index.html">
-							<h1 class="logo">Vincent Subasinghe</h1>
-						</a>
-					</div>
-
-					<div class="navbar-collapse collapse justify-content-end me-5" id="slide-navbar-collapse">
-						<ul id="slide-down" class="navbar-nav gap-4">
-							<li><a href="index.html" class="nav-link active">Home</a></li>
-							<!-- <li><a href="#about" class="nav-link">About me</a></li> -->
-							<li><a href="gallery.html" class="nav-link">Gallery</a></li>
-							<li><a href="blog.html" class="nav-link">Blog</a></li>
-							<li><a href="#contact" class="nav-link">Contact</a></li>
-						</ul>
-					</div>
-
-					<div class="social-links">
-						<ul class="list-unstyled d-flex m-0 gap-2">
-							<li>
-								<a href="#"><i class="icon icon-facebook"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="icon icon-twitter"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="icon icon-youtube"></i></a>
-							</li>
-						</ul>
-					</div><!--social-links-->
-
-					<div id="menu-btn" class="menu-btn"><span></span></div>
-
-				</nav>
-			</div>
-		</div>
-	</header>
-
-	<section class="page-title mt-5 py-5" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="d-flex flex-wrap flex-column justify-content-between align-items-center mt-5">
-					<h1 class="display-1">Life</h1>
-					<nav class="breadcrumb">
-						<a class="breadcrumb-item" href="index.html">Home</a>
-						<span class="breadcrumb-item active" aria-current="page">Sandalanka Sanda</span>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="py-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repellendus facilis similique
-						molestias repudiandae dolor omnis maiores, dicta quaerat pariatur incidunt sapiente soluta
-						labore. Labore perferendis quae tempore earum minima!</p>
-				</div>
-				<div class="col-md-4">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repellendus facilis similique
-						molestias repudiandae dolor omnis maiores, dicta quaerat pariatur incidunt sapiente soluta
-						labore. Labore perferendis quae tempore earum minima!</p>
-				</div>
-				<div class="col-md-4">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repellendus facilis similique
-						molestias repudiandae dolor omnis maiores, dicta quaerat pariatur incidunt sapiente soluta
-						labore. Labore perferendis quae tempore earum minima!</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="mt-5">
-		<div class="vertical-element">
-			<div class="container">
-				<div class="row d-flex align-items-center">
-					<div class="col-md-7">
-						<div class="image-holder">
-							<img src="images/portfolio-item11.jpg" class="img-fluid" alt="about-us">
-						</div>
-					</div>
-					<div class="col-md-5">
-						<div class="section-element p-5">
-							<h2>The beginning of our journey</h2>
-							<p>The beginning of our journey vel tellus Turpis purus, gravida orci, fringilla a. Ac sed
-								eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit
-								libero. Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis
-								donec dolor id in. Pulvinar commodo mollis diam sed facilisis at magna imperdiet cursus
-								ac faucibus sit libero.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="vertical-element my-2 py-2 my-md-5 py-md-5">
-			<div class="container">
-				<div class="row d-flex align-items-center">
-					<div class="col-md-5">
-						<div class="section-element p-5">
-							<h2>Who are we?</h2>
-							<p>We are nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in.
-								Pulvinar commodo mollis diam sed facilisis at magna imperdiet cursus ac faucibus sit
-								libero. Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci,
-								fringilla a. Ac sed eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus
-								ac faucibus sit libero.</p>
-						</div>
-					</div>
-					<div class="col-md-7">
-						<div class="image-holder text-right">
-							<img src="images/portfolio-item10.jpg" class="img-fluid" alt="about-us">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="video">
-		<div class="container">
-			<div class="row">
-				<h2 class="my-5">Watch me in Action</h2>
-				<!-- <div class="video-player">
-					<iframe width="100%" height="720px" src="https://www.youtube.com/embed/2fs81LLioJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div> -->
-				<p>Youtube videos also can be added</p>
-			</div>
-		</div>
-	</section>
-
-	<section
-      class="portfolio py-5"
-      id="portfolio"
-    >
+    <header id="header" class="fixed-top">
       <div class="container-fluid">
-        <div
-          class="grid p-0 clearfix row row-cols-2 row-cols-md-3 row-cols-lg-5"
-        >
-          <!-- call the images here -->
+        <div class="row">
+          <nav class="navbar navbar-expand-lg py-4">
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1 class="logo">Vincent Subasinghe</h1>
+              </a>
+            </div>
+
+            <div
+              class="navbar-collapse collapse justify-content-end me-5"
+              id="slide-navbar-collapse"
+            >
+              <ul id="slide-down" class="navbar-nav gap-4">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <!-- <li><a href="#about" class="nav-link">About me</a></li> -->
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="social-links">
+              <ul class="list-unstyled d-flex m-0 gap-2">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61557207655273"
+                    ><i class="icon icon-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Draft:Vincent_Subasinghe"
+                    target="_blank"
+                    ><i class="fab fa-wikipedia-w"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!--social-links-->
+
+            <div id="menu-btn" class="menu-btn"><span></span></div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-title mt-5 py-5" id="about">
+      <div class="container">
+        <div class="row">
+          <div
+            class="d-flex flex-wrap flex-column justify-content-between align-items-center mt-5"
+          >
+            <!-- <h1 class="display-1">Life</h1> -->
+            <h1 class="display-1">Life of Vincent Subasinghe</h1>
+            <nav class="breadcrumb">
+              <a class="breadcrumb-item" href="index.html">Home</a>
+              <span class="breadcrumb-item active" aria-current="page"
+                >Sandalanka Sanda</span
+              >
+            </nav>
+          </div>
         </div>
       </div>
     </section>
 
-	<!-- contact section -->
-    <section id="contact" class="contact-detail my-5" style="background-color: #f4f1e8;">
-		<div class="container">
-		  <div class="row">
-			<div class="text-content mt-5 pt-5">
+    <section class="bio-section py-5">
+      <div class="container text-center">
+        <img
+          src="images/main/DSC_8347_1.JPG"
+          class="img-fluid"
+          alt="Vincent Subasinghe"
+          style="max-width: 50%; margin-bottom: 30px"
+        />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              Vincent Subasinghe was born in Sandalankawa on 29th March, 1906 as
+              the eldest son of the Subasinghe family and he had two younger
+              brothers and two younger sisters. He received his foundational
+              education at Hendiyagala Village School. His pursuit of knowledge
+              continued at St. Mary's College in Negombo and Ananda College in
+              Colombo. His early association of great leaders of Sri Lankan
+              renaissance movement in the calibre of Piyadasa Sirisena, Arthur V
+              Dias, and Pandith Batuwantudawa greatly influenced his world view.
+              Vincent Subasinghe was also able to work closely with Sri Lankan
+              national leaders such as P De S Kularatne, D S Senanayake, S W R D
+              Bandaranayake, Sirimao Bandaranayake and T B Ilangaratne. He
+              regularly sought advice from Venerable Heenatiyana Hemaloka Thero
+              and Ven. Kalukondiyaye Panyasekera Thero. Even if Vincent
+              Subasinghe carried out nationally important and internationally
+              known development work, he spent most of the time of his life in
+              his home town of Sandalankawa. Vincent Subasinghe died, at the age
+              of 80, on 24th of August 1985 at Sandalankawa Co-operative
+              hospital which he himself built in 1952.
+            </p>
+            <p>
+              Vincent Subasinghe is highly admired by all cross sections of the
+              society from the head of state to rural masses in Sri Lanka not
+              just because of his contribution to the socio-economic development
+              of the country but he is an ideal model for philanthropy, social
+              work and humanity even at the individual level. Vincent Subasinghe
+              never used his social power, reputation or influence for his
+              personal gains but he utilized them for the betterment of the
+              people he worked for. In fact, he used his personal comfort,
+              family wealth and other resources for the public work at his own
+              individual cost by leading a very humble and a simple life. He
+              never wanted to get the glory for the work he did voluntarily. He
+              stayed away from the limelight of all sorts of media and
+              emphasised that no institutions and ventures he built should be
+              named under him. He rejected all the rewards, awards and titles
+              offered to him by the government and its leaders.
+            </p>
+            <p>
+              It is well known that he did not accept the ambassadorship to USSR
+              offered by the Prime Minister S W R D Bandaranayake in 1957 as a
+              way of recognizing the excellent service rendered by Vincent
+              Subasinghe in improving USSR and Sri Lanka relations. Mr.
+              Bandaranayake was a close friend and a political hero of Vincent
+              Subasinghe and when the Prime Minister was assassinated in 1958,
+              Vincent Subasinghe was devastated according to his biography.
+            </p>
+            <p>
+              Another good instance to demonstrate the humbleness of Vincent
+              Subasinghe is when he was conferred the title “Sridahra” as the
+              first Sri Lankan in 1957 for his yamen service for the social
+              progress of the country. He has accepted the honour as it was as a
+              people’s award. However, during his lifetime he never used it and
+              he preferred to be called as “Vincent Subasinghe of Sandalankawa”.
+            </p>
+            <p>
+              Vincent Subasinghe’s futuristic thinking and benevolent actions
+              can inspire social entrepreneurs and patriots even today and
+              generations to come.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio py-5" id="portfolio">
+      <div class="container">
+        <div
+          class="grid p-0 clearfix row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
+        >
+          <!-- Gallery items will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section
+      id="contact"
+      class="contact-detail my-5"
+      style="background-color: #f4f1e8"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 detail-content">
+            <div class="text-content mt-5 pt-5">
               <div class="section-header">
                 <h2 class="section-title">Contact</h2>
               </div>
               <!--section-header-->
 
-              <p>I would love to get suggestions from you.</p>
+              <p>Please send your suggestions and comments</p>
 
               <form id="form" class="form-group">
                 <div class="text-input row">
@@ -237,160 +263,200 @@
 
               <div class="btn-left">
                 <button class="btn btn-dark px-5 py-3" onclick="sendEmail()">
-                  Send It
+                  Send
                 </button>
               </div>
             </div>
-			  <!--text-content-->
-			</div>
-			<div class="col-md-6 my-auto">
-			  <div class="card border-0">
-				<div class="card-body">
-				  <h5 class="card-title">Contact Details</h5>
-				  <p class="card-text"><strong>Email:</strong> info@vincentsubasinghe.info</p>
-				  <p class="card-text"><strong>Phone:</strong> 0773 703 344 / 0716 856 355 / 0767 240 225</p>
-				  <p class="card-text"><strong>Address:</strong> No. 873, Hendiyagala, Sandalankawa.</p>
-				  <div>
-					<a href="#" class="btn btn-primary btn-sm me-2"><i class="icon icon-facebook"></i></a>
-					<a href="#" class="btn btn-primary btn-sm me-2"><i class="icon icon-twitter"></i></a>
-					<a href="#" class="btn btn-primary btn-sm"><i class="icon icon-instagram"></i></a>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			</div>
-		  </div>
-		</div>
-	  </section>
+            <!--text-content-->
+          </div>
+          <div class="col-md-6 my-auto">
+            <div class="card border-0">
+              <div class="card-body">
+                <h5 class="card-title" style="margin-bottom: 10px">
+                  Contact Details
+                </h5>
+                <p>
+                  <strong
+                    >Sridhara Vincent Subasinghe Memorial Foundation</strong
+                  >
+                </p>
+                <div class="address-container">
+                  <div class="column">
+                    <p>
+                      <strong>Address:</strong> No. 873, Hendiyagala,
+                      Sandalankawa.
+                    </p>
+                  </div>
+                </div>
+                <p class="card-text">
+                  <strong>Phone:</strong> +94 77 370 3344 / +94 71 685 6355 /
+                  +94 76 724 0225
+                </p>
+                <p class="card-text">
+                  <strong>Email:</strong> info@vincentsubasinghe.info
+                </p>
+                <div>
+                  <!-- Facebook Button -->
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61557207655273"
+                    class="btn btn-primary btn-sm me-2 social-icon-btn"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
 
-	  <footer id="footer" class="mt-5 pt-5">
-		<div class="container">
-		  <div class="row">
-			<div class="footer-menu col-md-4">
-			  <h3 class="widget-title">Get In Touch</h3>
-			  <ul class="list-unstyled">
-				<li>
-				  <a href="mailto:contact@yourwebsite.com"
-					>contact@yourwebsite.com</a
-				  >
-				</li>
-				<li>+94 77 370 3344 / +94 71 685 6355 <br/> +94 76 724 0225</li>
-			  </ul>
-			</div>
-  
-			<div class="footer-menu col-md-4">
-			  <h3 class="widget-title">Address</h3>
-			  <ul class="list-unstyled" id="footer-menu">
-				<li>2489 Locust Court, Los Angeles</li>
-				<li>3927 Red Maple Drive, Los Angeles</li>
-			  </ul>
-			</div>
-  
-			<div class="footer-menu social-links col-md-4">
-			  <h3 class="widget-title">Social media links</h3>
-			  <ul class="list-unstyled d-flex gap-3">
-				<li>
-				  <a href="#"><i class="icon icon-facebook"></i></a>
-				</li>
-				<li>
-				  <a href="#"><i class="icon icon-twitter"></i></a>
-				</li>
-				<li>
-				  <a href="#"><i class="icon icon-instagram"></i></a>
-				</li>
-			  </ul>
-			</div>
-		  </div>
-		  <!--footer-content-->
-		</div>
-	  </footer>
-  
-	  <div class="footer-bottom py-5 mt-5 border-top">
-		<div class="container">
-		  <div class="copyright">
-			<p>
-			  © 2024 designed and developed by
-			  <a href="http://www.fablanka.lk/">FabLanka Foundation</a>
-			</p>
-		  </div>
-		</div>
-	  </div>
+                  <!-- Wikipedia Button -->
+                  <a
+                    href="https://en.wikipedia.org/wiki/Draft:Vincent_Subasinghe"
+                    class="btn btn-primary btn-sm me-2 social-icon-btn"
+                    target="_blank"
+                  >
+                    <i class="fab fa-wikipedia-w"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-		crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <footer id="footer" class="mt-5 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="footer-menu col-md-4">
+            <h3 class="widget-title">Get In Touch</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:contact@yourwebsite.com"
+                  >contact@yourwebsite.com</a
+                >
+              </li>
+              <li>
+                +94 77 370 3344 / +94 71 685 6355 <br />
+                +94 76 724 0225
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-menu col-md-4">
+            <h3 class="widget-title">Address</h3>
+            <ul class="list-unstyled" id="footer-menu">
+              <li>2489 Locust Court, Los Angeles</li>
+              <li>3927 Red Maple Drive, Los Angeles</li>
+            </ul>
+          </div>
+
+          <div class="footer-menu social-links col-md-4">
+            <h3 class="widget-title">Social media links</h3>
+            <ul class="list-unstyled d-flex gap-3">
+              <li>
+                <a href="#"><i class="icon icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--footer-content-->
+      </div>
+    </footer>
+
+    <div class="footer-bottom py-5 mt-5 border-top">
+      <div class="container">
+        <div class="copyright">
+          <p>
+            © 2024 designed and developed by
+            <a href="http://www.fablanka.lk/">FabLanka Foundation</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script src="jsonfile/imagesData.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="jsonfile/imagesData.js"></script>
     <script>
-		document.addEventListener("DOMContentLoaded", () => {
-		  const gridElement = document.querySelector(".grid");
-	  
-		  const generateGalleryItemHTML = (item) => {
-			const categoriesClass = item.category.join(" ");
-			return `
+      document.addEventListener("DOMContentLoaded", () => {
+        const gridElement = document.querySelector(".grid");
+
+        const generateGalleryItemHTML = (item) => {
+          const categoriesClass = item.category.join(" ");
+          return `
 			  <div class="col mb-4 portfolio-item ${categoriesClass}">
 				  <a href="${item.imageUrl}" data-title="${item.title}" class="image-link" title="${item.title}">
 					  <img src="${item.thumbUrl}" class="img-fluid" alt="${item.title}">
 				  </a>
 			  </div>
 			`;
-		  };
-	  
-		  imagesData.forEach((item) => {
-			if (item.category.includes("life")) {
-			  gridElement.innerHTML += generateGalleryItemHTML(item);
-			}
-		  });
-		});
-	  </script>
-	  
-	  <script>
-		function filterGallery(category) {
-		  const items = document.querySelectorAll(".portfolio-item");
-		  let count = 0; // Counter for displayed items
-	  
-		  items.forEach((item) => {
-			console.log(item);
-			// Remove the fade-in class to reset animation state
-			item.classList.remove("fade-in");
-	  
-			if (category === "life" && item.classList.contains(category) && count < 10) {
-			  item.style.display = ""; // Show this item
-			  // Add the fade-in class to animate items that match the filter
-			  setTimeout(() => item.classList.add("fade-in"), 10); // Short delay to ensure the class is added after display change
-			  count++; // Increment the counter only if the item is displayed
-			} else {
-			  item.style.display = "none"; // Hide this item
-			}
-		  });
-	  
-		  // Highlight the active filter (from previous steps)
-		  document.querySelectorAll("#filters a").forEach((a) => {
-			if (a.dataset.filter === category) {
-			  a.classList.add("is-checked");
-			} else {
-			  a.classList.remove("is-checked");
-			}
-		  });
-		}
-	  </script>
-	  <script src="js/email.js"></script>
-	  <script type="text/javascript">
-		(function () {
-		  emailjs.init({
-			publicKey: "SXJ-pi3nfkiT6KdJP",
-		  });
-		})();
-	  </script>
-</body>
+        };
 
+        imagesData.forEach((item) => {
+          if (item.category.includes("life")) {
+            gridElement.innerHTML += generateGalleryItemHTML(item);
+          }
+        });
+      });
+    </script>
+
+    <script>
+      function filterGallery(category) {
+        const items = document.querySelectorAll(".portfolio-item");
+        let count = 0; // Counter for displayed items
+
+        items.forEach((item) => {
+          console.log(item);
+          // Remove the fade-in class to reset animation state
+          item.classList.remove("fade-in");
+
+          if (
+            category === "life" &&
+            item.classList.contains(category) &&
+            count < 10
+          ) {
+            item.style.display = ""; // Show this item
+            // Add the fade-in class to animate items that match the filter
+            setTimeout(() => item.classList.add("fade-in"), 10); // Short delay to ensure the class is added after display change
+            count++; // Increment the counter only if the item is displayed
+          } else {
+            item.style.display = "none"; // Hide this item
+          }
+        });
+
+        // Highlight the active filter (from previous steps)
+        document.querySelectorAll("#filters a").forEach((a) => {
+          if (a.dataset.filter === category) {
+            a.classList.add("is-checked");
+          } else {
+            a.classList.remove("is-checked");
+          }
+        });
+      }
+    </script>
+    <script src="js/email.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "SXJ-pi3nfkiT6KdJP",
+        });
+      })();
+    </script>
+  </body>
 </html>

@@ -1,8 +1,6 @@
-
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Vincent Subhasinha</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,170 +12,219 @@
     <meta name="description" content="description" />
     <link rel="icon" href="images/logo.webp" type="image/x-icon" />
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/vendor.css">
-	<link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-		rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
+  <body>
+    <div class="nav nav-overlay">
+      <div id="menu-btn-close" class="menu-btn menu-btn-close">
+        <span></span>
+      </div>
+      <div class="nav__content">
+        <ul class="nav__list">
+          <li class="nav__list-item active-nav">
+            <a href="index.html" class="hover-target">Home</a>
+          </li>
+          <!-- <li class="nav__list-item"><a href="about.html" class="hover-target">About </a></li> -->
+          <li class="nav__list-item">
+            <a href="contact.html" class="hover-target">Contact </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="gallery.html" class="hover-target">Gallery </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="blog.html" class="hover-target">Blog </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-<body>
+    <header id="header" class="fixed-top">
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg py-4">
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1 class="logo">Vincent Subasinghe</h1>
+              </a>
+            </div>
 
-	<div class="nav nav-overlay">
-		<div id="menu-btn-close" class="menu-btn menu-btn-close"><span></span></div>
-		<div class="nav__content">
-			<ul class="nav__list">
-				<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a></li>
-				<!-- <li class="nav__list-item"><a href="about.html" class="hover-target">About </a></li> -->
-				<li class="nav__list-item"><a href="contact.html" class="hover-target">Contact </a></li>
-				<li class="nav__list-item"><a href="gallery.html" class="hover-target">Gallery </a></li>
-				<li class="nav__list-item"><a href="blog.html" class="hover-target">Blog </a></li>
-			</ul>
-		</div>
-	</div>
+            <div
+              class="navbar-collapse collapse justify-content-end me-5"
+              id="slide-navbar-collapse"
+            >
+              <ul id="slide-down" class="navbar-nav gap-4">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <!-- <li><a href="#about" class="nav-link">About me</a></li> -->
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+              </ul>
+            </div>
 
-	<header id="header" class="fixed-top">
-		<div class="container-fluid">
-			<div class="row">
-				<nav class="navbar navbar-expand-lg py-4">
-					<div class="navbar-brand">
-						<a href="index.html">
-							<h1 class="logo">Vincent Subasinghe</h1>
-						</a>
-					</div>
+            <div class="social-links">
+              <ul class="list-unstyled d-flex m-0 gap-2">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61557207655273"
+                    ><i class="icon icon-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Draft:Vincent_Subasinghe"
+                    target="_blank"
+                    ><i class="fab fa-wikipedia-w"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!--social-links-->
 
-					<div class="navbar-collapse collapse justify-content-end me-5" id="slide-navbar-collapse">
-						<ul id="slide-down" class="navbar-nav gap-4">
-							<li><a href="index.html" class="nav-link active">Home</a></li>
-							<!-- <li><a href="#about" class="nav-link">About me</a></li> -->
-							<li><a href="gallery.html" class="nav-link">Gallery</a></li>
-							<li><a href="blog.html" class="nav-link">Blog</a></li>
-							<li><a href="#contact" class="nav-link">Contact</a></li>
-						</ul>
-					</div>
+            <div id="menu-btn" class="menu-btn"><span></span></div>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-					<div class="social-links">
-						<ul class="list-unstyled d-flex m-0 gap-2">
-							<li>
-								<a href="#"><i class="icon icon-facebook"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="icon icon-twitter"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="icon icon-youtube"></i></a>
-							</li>
-						</ul>
-					</div><!--social-links-->
+    <section class="page-title mt-5 py-5" id="about">
+      <div class="container">
+        <div class="row">
+          <div
+            class="d-flex flex-wrap flex-column justify-content-between align-items-center mt-5"
+          >
+            <h1 class="display-1">Sandalanka Sanda (සඳලංකා සඳ)</h1>
+            <nav class="breadcrumb">
+              <a class="breadcrumb-item" href="index.html">Home</a>
+              <span class="breadcrumb-item active" aria-current="page"
+                >Sandalanka Sanda</span
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<div id="menu-btn" class="menu-btn"><span></span></div>
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              repellendus facilis similique molestias repudiandae dolor omnis
+              maiores, dicta quaerat pariatur incidunt sapiente soluta labore.
+              Labore perferendis quae tempore earum minima!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              repellendus facilis similique molestias repudiandae dolor omnis
+              maiores, dicta quaerat pariatur incidunt sapiente soluta labore.
+              Labore perferendis quae tempore earum minima!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              repellendus facilis similique molestias repudiandae dolor omnis
+              maiores, dicta quaerat pariatur incidunt sapiente soluta labore.
+              Labore perferendis quae tempore earum minima!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				</nav>
-			</div>
-		</div>
-	</header>
+    <section class="mt-5">
+      <div class="vertical-element">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-7">
+              <div class="image-holder">
+                <img
+                  src="images/portfolio-item11.jpg"
+                  class="img-fluid"
+                  alt="about-us"
+                />
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="section-element p-5">
+                <h2>The beginning of our journey</h2>
+                <p>
+                  The beginning of our journey vel tellus Turpis purus, gravida
+                  orci, fringilla a. Ac sed eu fringilla odio mi. Consequat
+                  pharetra at magna imperdiet cursus ac faucibus sit libero.
+                  Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut.
+                  In vel, quis donec dolor id in. Pulvinar commodo mollis diam
+                  sed facilisis at magna imperdiet cursus ac faucibus sit
+                  libero.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-element my-2 py-2 my-md-5 py-md-5">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-5">
+              <div class="section-element p-5">
+                <h2>Who are we?</h2>
+                <p>
+                  We are nunc, lorem sit lorem urna, pretium aliquam ut. In vel,
+                  quis donec dolor id in. Pulvinar commodo mollis diam sed
+                  facilisis at magna imperdiet cursus ac faucibus sit libero.
+                  Dignissim lacus, turpis ut suspendisse vel tellus. Turpis
+                  purus, gravida orci, fringilla a. Ac sed eu fringilla odio mi.
+                  Consequat pharetra at magna imperdiet cursus ac faucibus sit
+                  libero.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="image-holder text-right">
+                <img
+                  src="images/portfolio-item10.jpg"
+                  class="img-fluid"
+                  alt="about-us"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section class="page-title mt-5 py-5" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="d-flex flex-wrap flex-column justify-content-between align-items-center mt-5">
-					<h1 class="display-1">Sandalanka Sanda (සඳලංකා සඳ)</h1>
-					<nav class="breadcrumb">
-						<a class="breadcrumb-item" href="index.html">Home</a>
-						<span class="breadcrumb-item active" aria-current="page">Sandalanka Sanda</span>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="py-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repellendus facilis similique
-						molestias repudiandae dolor omnis maiores, dicta quaerat pariatur incidunt sapiente soluta
-						labore. Labore perferendis quae tempore earum minima!</p>
-				</div>
-				<div class="col-md-4">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repellendus facilis similique
-						molestias repudiandae dolor omnis maiores, dicta quaerat pariatur incidunt sapiente soluta
-						labore. Labore perferendis quae tempore earum minima!</p>
-				</div>
-				<div class="col-md-4">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repellendus facilis similique
-						molestias repudiandae dolor omnis maiores, dicta quaerat pariatur incidunt sapiente soluta
-						labore. Labore perferendis quae tempore earum minima!</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="mt-5">
-		<div class="vertical-element">
-			<div class="container">
-				<div class="row d-flex align-items-center">
-					<div class="col-md-7">
-						<div class="image-holder">
-							<img src="images/portfolio-item11.jpg" class="img-fluid" alt="about-us">
-						</div>
-					</div>
-					<div class="col-md-5">
-						<div class="section-element p-5">
-							<h2>The beginning of our journey</h2>
-							<p>The beginning of our journey vel tellus Turpis purus, gravida orci, fringilla a. Ac sed
-								eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit
-								libero. Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis
-								donec dolor id in. Pulvinar commodo mollis diam sed facilisis at magna imperdiet cursus
-								ac faucibus sit libero.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="vertical-element my-2 py-2 my-md-5 py-md-5">
-			<div class="container">
-				<div class="row d-flex align-items-center">
-					<div class="col-md-5">
-						<div class="section-element p-5">
-							<h2>Who are we?</h2>
-							<p>We are nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in.
-								Pulvinar commodo mollis diam sed facilisis at magna imperdiet cursus ac faucibus sit
-								libero. Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci,
-								fringilla a. Ac sed eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus
-								ac faucibus sit libero.</p>
-						</div>
-					</div>
-					<div class="col-md-7">
-						<div class="image-holder text-right">
-							<img src="images/portfolio-item10.jpg" class="img-fluid" alt="about-us">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="video">
-		<div class="container">
-			<div class="row">
-				<h2 class="my-5">Watch me in Action</h2>
-				<!-- <div class="video-player">
+    <section class="video">
+      <div class="container">
+        <div class="row">
+          <h2 class="my-5">Watch me in Action</h2>
+          <!-- <div class="video-player">
 					<iframe width="100%" height="720px" src="https://www.youtube.com/embed/2fs81LLioJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div> -->
-				<p>Youtube videos also can be added</p>
-			</div>
-		</div>
-	</section>
+          <p>Youtube videos also can be added</p>
+        </div>
+      </div>
+    </section>
 
-	<!-- <section class="testimonials py-5">
+    <!-- <section class="testimonials py-5">
 		<div class="container">
 			<div class="row">
 				<div class="section-header text-center my-5">
@@ -214,17 +261,22 @@
 		</div>
 	</section> -->
 
-	<!-- contact section -->
-    <section id="contact" class="contact-detail my-5" style="background-color: #f4f1e8;">
-		<div class="container">
-		  <div class="row">
-			<div class="text-content mt-5 pt-5">
+    <!-- contact section -->
+    <section
+      id="contact"
+      class="contact-detail my-5"
+      style="background-color: #f4f1e8"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 detail-content">
+            <div class="text-content mt-5 pt-5">
               <div class="section-header">
                 <h2 class="section-title">Contact</h2>
               </div>
               <!--section-header-->
 
-              <p>I would love to get suggestions from you.</p>
+              <p>Please send your suggestions and comments</p>
 
               <form id="form" class="form-group">
                 <div class="text-input row">
@@ -261,93 +313,130 @@
 
               <div class="btn-left">
                 <button class="btn btn-dark px-5 py-3" onclick="sendEmail()">
-                  Send It
+                  Send
                 </button>
               </div>
             </div>
-			  <!--text-content-->
-			</div>
-			<div class="col-md-6 my-auto">
-			  <div class="card border-0">
-				<div class="card-body">
-				  <h5 class="card-title">Contact Details</h5>
-				  <p class="card-text"><strong>Email:</strong> info@vincentsubasinghe.info</p>
-				  <p class="card-text"><strong>Phone:</strong> 0773 703 344 / 0716 856 355 / 0767 240 225</p>
-				  <p class="card-text"><strong>Address:</strong> No. 873, Hendiyagala, Sandalankawa.</p>
-				  <div>
-					<a href="#" class="btn btn-primary btn-sm me-2"><i class="icon icon-facebook"></i></a>
-					<a href="#" class="btn btn-primary btn-sm me-2"><i class="icon icon-twitter"></i></a>
-					<a href="#" class="btn btn-primary btn-sm"><i class="icon icon-instagram"></i></a>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			</div>
-		  </div>
-		</div>
-	  </section>
+            <!--text-content-->
+          </div>
+          <div class="col-md-6 my-auto">
+            <div class="card border-0">
+              <div class="card-body">
+                <h5 class="card-title" style="margin-bottom: 10px">
+                  Contact Details
+                </h5>
+                <p>
+                  <strong
+                    >Sridhara Vincent Subasinghe Memorial Foundation</strong
+                  >
+                </p>
+                <div class="address-container">
+                  <div class="column">
+                    <p>
+                      <strong>Address:</strong> No. 873, Hendiyagala,
+                      Sandalankawa.
+                    </p>
+                  </div>
+                </div>
+                <p class="card-text">
+                  <strong>Phone:</strong> +94 77 370 3344 / +94 71 685 6355 /
+                  +94 76 724 0225
+                </p>
+                <p class="card-text">
+                  <strong>Email:</strong> info@vincentsubasinghe.info
+                </p>
+                <div>
+                  <!-- Facebook Button -->
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61557207655273"
+                    class="btn btn-primary btn-sm me-2 social-icon-btn"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
 
-	  <footer id="footer" class="mt-5 pt-5">
-		<div class="container">
-		  <div class="row">
-			<div class="footer-menu col-md-4">
-			  <h3 class="widget-title">Get In Touch</h3>
-			  <ul class="list-unstyled">
-				<li>
-				  <a href="mailto:contact@yourwebsite.com"
-					>contact@yourwebsite.com</a
-				  >
-				</li>
-				<li>+94 77 370 3344 / +94 71 685 6355 <br/> +94 76 724 0225</li>
-			  </ul>
-			</div>
-  
-			<div class="footer-menu col-md-4">
-			  <h3 class="widget-title">Address</h3>
-			  <ul class="list-unstyled" id="footer-menu">
-				<li>2489 Locust Court, Los Angeles</li>
-				<li>3927 Red Maple Drive, Los Angeles</li>
-			  </ul>
-			</div>
-  
-			<div class="footer-menu social-links col-md-4">
-			  <h3 class="widget-title">Social media links</h3>
-			  <ul class="list-unstyled d-flex gap-3">
-				<li>
-				  <a href="#"><i class="icon icon-facebook"></i></a>
-				</li>
-				<li>
-				  <a href="#"><i class="icon icon-twitter"></i></a>
-				</li>
-				<li>
-				  <a href="#"><i class="icon icon-instagram"></i></a>
-				</li>
-			  </ul>
-			</div>
-		  </div>
-		  <!--footer-content-->
-		</div>
-	  </footer>
-  
-	  <div class="footer-bottom py-5 mt-5 border-top">
-		<div class="container">
-		  <div class="copyright">
-			<p>
-			  © 2024 designed and developed by
-			  <a href="http://www.fablanka.lk/">FabLanka Foundation</a>
-			</p>
-		  </div>
-		</div>
-	  </div>
+                  <!-- Wikipedia Button -->
+                  <a
+                    href="https://en.wikipedia.org/wiki/Draft:Vincent_Subasinghe"
+                    class="btn btn-primary btn-sm me-2 social-icon-btn"
+                    target="_blank"
+                  >
+                    <i class="fab fa-wikipedia-w"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-		crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script src="js/email.js"></script>
+    <footer id="footer" class="mt-5 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="footer-menu col-md-4">
+            <h3 class="widget-title">Get In Touch</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:contact@yourwebsite.com"
+                  >contact@yourwebsite.com</a
+                >
+              </li>
+              <li>
+                +94 77 370 3344 / +94 71 685 6355 <br />
+                +94 76 724 0225
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-menu col-md-4">
+            <h3 class="widget-title">Address</h3>
+            <ul class="list-unstyled" id="footer-menu">
+              <li>2489 Locust Court, Los Angeles</li>
+              <li>3927 Red Maple Drive, Los Angeles</li>
+            </ul>
+          </div>
+
+          <div class="footer-menu social-links col-md-4">
+            <h3 class="widget-title">Social media links</h3>
+            <ul class="list-unstyled d-flex gap-3">
+              <li>
+                <a href="#"><i class="icon icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon icon-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--footer-content-->
+      </div>
+    </footer>
+
+    <div class="footer-bottom py-5 mt-5 border-top">
+      <div class="container">
+        <div class="copyright">
+          <p>
+            © 2024 designed and developed by
+            <a href="http://www.fablanka.lk/">FabLanka Foundation</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/email.js"></script>
     <script type="text/javascript">
       (function () {
         emailjs.init({
@@ -355,6 +444,5 @@
         });
       })();
     </script>
-</body>
-
+  </body>
 </html>
