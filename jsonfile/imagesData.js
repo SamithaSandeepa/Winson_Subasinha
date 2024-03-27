@@ -84,4 +84,25 @@ const imagesData = [
     thumbUrl: "images/Family/family_2.jpg",
     title: "Caption9.",
   },
+  {
+    id: 13,
+    category: ["All", "sandalanka_sanda"],
+    imageUrl: "images/Sandalanka Sanda/DSC_8391.JPG",
+    thumbUrl: "images/Sandalanka Sanda/DSC_8391.JPG",
+    title: "Caption10.",
+  },
+  {
+    id: 14,
+    category: ["All", "sandalanka_sanda"],
+    imageUrl: "images/Sandalanka Sanda/DSC_8394.JPG",
+    thumbUrl: "images/Sandalanka Sanda/DSC_8394.JPG",
+    title: "Caption11.",
+  },
+  {
+    id: 15,
+    category: ["All", "sandalanka_sanda"],
+    imageUrl: "images/Sandalanka Sanda/sandalanka_sanda_1.JPG",
+    thumbUrl: "images/Sandalanka Sanda/sandalanka_sanda_1.JPG",
+    title: "Caption12.",
+  },
 ];
