@@ -105,4 +105,11 @@ const imagesData = [
     thumbUrl: "images/Sandalanka Sanda/sandalanka_sanda_1.JPG",
     title: "Caption12.",
   },
+  {
+    id: 16,
+    category: ["All", "life"],
+    imageUrl: "images/Life/life_1.jpg",
+    thumbUrl: "images/Life/life_1.jpg",
+    title: "Caption13.",
+  },
 ];
