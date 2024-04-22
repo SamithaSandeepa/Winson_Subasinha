@@ -342,6 +342,8 @@
     <script>
       function displayBlogs(page) {
         const blogsPerPage = 3;
+        // Sort blogs in descending order by date (assuming 'date' can be used for sorting and is in standard format)
+        blogsData.sort((a, b) => new Date(b.date) - new Date(a.date));
         const startIndex = (page - 1) * blogsPerPage;
         const endIndex = startIndex + blogsPerPage;
         const blogsToShow = blogsData.slice(startIndex, endIndex);
@@ -354,7 +356,9 @@
           const blogItemHtml = `
             <article class="post-item mb-5 pb-5">
               <div class="post-image">
-                <a href="single-post.html?id=${blog.id}"><img src="${blog.image}" class="img-fluid"></a>
+                <a href="single-post.html?id=${blog.id}">
+                    <img src="${blog.image}" class="img-fluid" style="width: 300px; height: auto;">
+                </a>
               </div>
               <div class="post-content">
                 <div class="post-meta text-uppercase mt-5">

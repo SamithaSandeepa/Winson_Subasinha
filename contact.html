@@ -327,29 +327,6 @@
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail() {
-        event.preventDefault(); // Prevent the form from submitting the traditional way
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("message").value;
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "samitha.onshape@gmail.com",
-          Password: "687214445539EFCB128CFBDA0EC4826344BF",
-          To: "samitha.onshape@gmail.com",
-          From: "samitha.onshape@gmail.com",
-          // Subject: `${name} sent you a message via contact form`,
-          // Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
-          Subject: "test",
-          Body: "test",
-        }).then((message) => {
-          alert(message); // Show the result in an alert
-          document.getElementById("form").reset();
-        });
-        return false;
-      }
-    </script>
     <script src="js/email.js"></script>
     <script type="text/javascript">
       (function () {

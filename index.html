@@ -203,7 +203,7 @@
                   Batuwantudawa greatly influenced his world view. Vincent
                   Subasinghe was also able to work closely with Sri Lankan
                   national leaders such as P De S Kularatne, D S Senanayake, S W
-                  R D Bandaranayake, Sirimao Bandaranayake and TB Ilangaratne.
+                  R D Bandaranayake, Sirimavo Bandaranayake and TB Ilangaratne.
                   He regularly sought advice from Venerable Heenatiyana Hemaloka
                   Thero and Ven. Kalukondiyaye Panyasekera Thero. Even if
                   Vincent Subasinghe carried out nationally important and
@@ -367,8 +367,8 @@
                   his initiatives, Sandalankawa Central College, Sandalankawa
                   Cooperative Hospital and Sandalankawa Multi-purpose
                   Cooperative Society are probably the most important ventures.
-                  Vincent Subasinghe is still regarded as “Sandalaka Sanda” or “
-                  Moon of Sandalankawa”. His work not only has contributed to
+                  Vincent Subasinghe is still regarded as “Sandalaka Sanda” or
+                  “Moon of Sandalankawa”. His work not only has contributed to
                   the socio-economic development but also helped Sandalankawa to
                   build a very positive image as a prosperous and progressive
                   place in the Island.
@@ -425,21 +425,23 @@
                   Sandalankawa, had done an yeoman service to the country in
                   general. Most notable services are working as the founder
                   chairman of People’s Bank in Sri Lanka, serving as the
-                  chairman of Cooperative Wholesale Establishment (CWE) ( also
-                  known as Sathosa) and starting the Cooperative Rural Bank. In
+                  chairman of Cooperative Wholesale Establishment (CWE), also
+                  known as Sathosa, and starting the Cooperative Rural Bank. In
                   addition, Vincent Subasinghe has initiated many ventures and
                   projects across the country to build the local economy. As a
                   true believer of local knowledge and local resources, he has
-                  demonstrated the power of local economic business models as an
-                  alternative to colonial trading systems. By doing so, he has
-                  empowered man and women in very rural and under developed
-                  parts of the country to become active entrepreneurs and
-                  confident citizens while contributing to national economy.
+                  demonstrated the power of local economic business models as
+                  alternatives to colonial trading systems. By doing so, he
+                  empowered people in very rural and underdeveloped parts of the
+                  country to become active entrepreneurs and confident citizens
+                  while contributing to the national economy.
                 </p>
               </div>
 
               <div class="btn-left">
-                <a href="#" class="btn btn-dark px-5 py-3">Read More</a>
+                <a href="nationalwork.html" class="btn btn-dark px-5 py-3"
+                  >Read More</a
+                >
               </div>
             </div>
             <!--text-content-->
@@ -463,30 +465,31 @@
 
               <div class="description">
                 <p>
-                  Even Vincent Subasinghe has his entire life as a proud Sri
-                  Lankan and always looked at local and national models of
-                  building Sri Lanka as independent nation against colonial
+                  Vincent Subasinghe has led his entire life as a proud Sri
+                  Lankan and always looked at local and national models for
+                  building Sri Lanka as an independent nation against colonial
                   legacies. However, he was also an internationalist by thinking
-                  as well as practise. Before building his local and national
+                  as well as practise. For building his local and national
                   movements and ventures, he has thoroughly studied the
                   international practises and models from across the world. In a
-                  time when an international travel was very difficult and
-                  costly, Vincent Subsinghe has travelled extensively, spending
-                  his own money, for studies and building partnerships. He has
-                  visited many cities in India to learn about the cooperatives
-                  their and used the experience to start the cooperative
-                  movement in Sri Lanka. In an era when the world was divided
-                  into two camps as socialist and capitalist, Vincent Subasinghe
-                  has been able to visit and build relationships in many
-                  diversified places such as USSR, Eastern Europe, Western
-                  Europe, UK as well as Asian countries. His special relations
-                  to Russia and China was very useful in carrying out his
-                  national services in Sri Lanka.
+                  time when international travel was very difficult and costly,
+                  Vincent Subsinghe travelled extensively, spending his own
+                  money, for studies and building partnerships. He visited many
+                  cities in India to learn about the cooperatives there and used
+                  the experience to start the cooperative movement in Sri Lanka.
+                  In an era when the world was divided into two camps as
+                  socialist and capitalist, Vincent Subasinghe has been able to
+                  visit and build relationships in many diversified places such
+                  as USSR, Eastern Europe, Western Europe, UK as well as Asian
+                  countries. His special relations to Russia and China was very
+                  useful in carrying out his national services in Sri Lanka.
                 </p>
               </div>
 
               <div class="btn-left">
-                <a href="#" class="btn btn-dark px-5 py-3">Read More</a>
+                <a href="international.html" class="btn btn-dark px-5 py-3"
+                  >Read More</a
+                >
               </div>
             </div>
             <!--text-content-->
@@ -761,6 +764,8 @@
     <script>
       function displayBlogs(page) {
         const blogsPerPage = 4;
+        // Sort blogs in descending order by date (assuming 'date' can be used for sorting and is in standard format)
+        blogsData.sort((a, b) => new Date(b.date) - new Date(a.date));
         const startIndex = (page - 1) * blogsPerPage;
         const endIndex = startIndex + blogsPerPage;
         const blogsToShow = blogsData.slice(startIndex, endIndex);
@@ -800,6 +805,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const gridElement = document.querySelector(".grid");
+        let itemCount = 0; // Counter to track the number of items displayed
 
         const generateGalleryItemHTML = (item) => {
           const categoriesClass = item.category.join(" ");
@@ -807,23 +813,30 @@
           <div class="col mb-4 portfolio-item ${categoriesClass}">
             <a href="${item.imageUrl}" data-title="${item.title}" class="image-link" title="${item.title}">
               <img src="${item.thumbUrl}" class="img-fluid" alt="portfolio">
-              </a>
-              </div>
-              `;
+            </a>
+          </div>
+          `;
         };
 
         imagesData.forEach((item) => {
-          gridElement.innerHTML += generateGalleryItemHTML(item);
+          if (
+            item.category.some((cat) =>
+              ["all", "family", "life"].includes(cat.toLowerCase())
+            )
+          ) {
+            gridElement.innerHTML += generateGalleryItemHTML(item);
+          }
         });
+
+        // Automatically apply the filter for 'all' category after generating the gallery items
+        filterGallery("all");
       });
-    </script>
-    <script>
+
       function filterGallery(category) {
         const items = document.querySelectorAll(".portfolio-item");
         let count = 0; // Counter for displayed items
 
         items.forEach((item) => {
-          console.log(item);
           // Remove the fade-in class to reset animation state
           item.classList.remove("fade-in");
 
@@ -842,7 +855,7 @@
           }
         });
 
-        // Highlight the active filter (from previous steps)
+        // Highlight the active filter (optional UI feature)
         document.querySelectorAll("#filters a").forEach((a) => {
           if (a.dataset.filter === category) {
             a.classList.add("is-checked");

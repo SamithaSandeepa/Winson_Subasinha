@@ -5,7 +5,7 @@ const blogsData = [
     title: "වින්සන්ට් සුබසිංහ නම් වූ මානව හිතවාදියා",
     date: "23 Mar, 2024",
     // category: "Fashion",
-    image: "images/portfolio-item11.jpg",
+    image: "images/blog/1/blog.jpg",
     summary:
       "වයඹ පළාතේ කෙත්බිම් වලින් සමන්විත වූ ගැමි පරිසරයකට නෑකම් කියූ ඉතා රමණීය ගම් පෙදෙස් වන සඳලංකා නම් ග්‍රාමයෙහි අප කථානායකයානෝ....",
     content: `<p>වයඹ පළාතේ කෙත්බිම් වලින් සමන්විත වූ ගැමි පරිසරයකට නෑකම් කියූ ඉතා රමණීය ගම් පෙදෙස් වන සඳලංකා නම් ග්‍රාමයෙහි අප කථානායකයානෝ ජන්මලාභය ලැබූහ.</p>
@@ -57,7 +57,7 @@ const blogsData = [
     title: "“ශ්‍රීධර” ප්‍රථම ජාතික සම්මානලාභී වින්සන්ට් සුබසිංහ",
     date: "22 Mar, 2024",
     // category: "Fashion",
-    image: "images/portfolio-item11.jpg",
+    image: "images/blog/2/blog2.jpg",
     summary:
       "සමුපකාර ව්‍යාපාරයේ පියා” ලෙස විරුදාවලීලත් මෙරට සමුපකාර ඉතිහාසයේ එක් පරිච්ජේදයක් ලෙස සැළකෙන සඳලංකා සමුපකාර ව්‍යාපාරයේ නිර්මාතෘ වූත් සමුපකාර ව්‍යාපාරයේ ප්‍රාදේශික සිල්ලර....",
     content: `<div>
@@ -91,7 +91,7 @@ const blogsData = [
     title: "ග්‍රාමීය බැංකුවේ උපත",
     date: "22 Mar, 2024",
     // category: "Fashion",
-    image: "images/blog/3/1.jpg",
+    image: "images/national/national_1.jpg",
     summary:
       "ඉන්දියා ගමනේදී ගම්බදව පිහිටුවිය යුතු බැංකු පිළිබඳ සෑහෙන අවබෝධයක් ලැබුනි. එහිදී ඉගෙනගත් වැදගත් කරුණු ගැන මම කල්තබාම සිතා සිටියෙමි. ගම්බද අයට මුදල්....",
     content: `<p>“ඉන්දියා ගමනේදී ගම්බදව පිහිටුවිය යුතු බැංකු පිළිබඳ සෑහෙන අවබෝධයක් ලැබුනි. එහිදී ඉගෙනගත් වැදගත් කරුණු ගැන මම කල්තබාම සිතා සිටියෙමි. ගම්බද අයට මුදල් ගණුදෙනුව අතින් සේවයක් වන්නට නම් ලොකු මහත්තැන් මේ අය අතර නොවැටෙන්නට වග බලා ගෙන කලින් සඳහන් කළ අයගේම බැංකු ක්‍රමයක් රටෙහි ඇති කළ යුතු බවය. ඉන්දියාවේ සමුපකාර බැංකු ක්‍රියාත්මක කෙරෙන්නේ මේ අදහසට නැඹුරුවයි.</p>
@@ -112,17 +112,23 @@ const blogsData = [
     <li>	වෙබ් අඩවිය දියත් කිරීම </li>
     <li>	118 වන ජන්ම දිනය වෙනුවෙන් තැපැල් දෙපාර්තමේන්තුව මගින් තැපැල් මුද්දරයක් නිකුත් කිරීම</li>
     <li>	ග්‍රාමිය බැංකු ව්‍යාපාරයේ හැට වසරක ගමන්මග හා සුබසිංහයන් විසින් මෙරට ප්‍රථම වරට ඇරඹි සමුපකාර සමුපකාර ගොවිපල ක්‍රමය පිළිබඳ විස්තර සහිතව ජාතික සමුපකාර සංවර්ධන ආයතනය විශේෂයෙන්ම සම්පාදනය කළ “නව පිවිසුම” සමුපකාර දැනුම් සංග්‍රහය ප්‍රකාශයට පත් කිරීම </li>
+    <br/>
+    <i>
+    ආනන්ද කරුණාරත්න<br/>
+    සභාපති, ශ්‍රීධර වින්සන්ට් සුබසිංහ අනුස්මරණ පදනම
+    </i>
     <div/>`,
   },
   {
     id: 4,
     title: "The village was where he always belonged",
-    date: "26 Aug, 2007",
+    date: "22 Mar, 2024",
     // category: "",
-    image: "images/portfolio-item17.jpg",
+    image: "images/blog/4/blog4.jpg",
     summary:
       "Vincent Subasinghe was to me the embodiment of what a good man should be. Quiet and dignified by disposition, he was a man of unimpeachable....",
-    content: `<p class="content">Vincent Subasinghe was to me the embodiment of what a good man should be. Quiet and dignified by disposition, he was a man of unimpeachable integrity. He had a commanding personality and keen intellect. A socialist who lived by the principles of socialism, he did not believe in rabble rousing or slogan shouting.</p>
+    content: `<p class="content" style="
+    margin-top: 15px;>Vincent Subasinghe was to me the embodiment of what a good man should be. Quiet and dignified by disposition, he was a man of unimpeachable integrity. He had a commanding personality and keen intellect. A socialist who lived by the principles of socialism, he did not believe in rabble rousing or slogan shouting.</p>
     <p class="content">              I first came to know Vincent when I married his wife&rsquo;s brother. Born with a silver spoon in his mouth, he was the son of a prosperous landed proprietor. Yet he was simple and humble.  Essentially a villager at heart, he saw all around him the poor villagers for whom life was a struggle. It was his concern to make them self-sufficient and he endeavoured to do so by making them help themselves. He believed that co-operative effort was the answer and so he decided on a course of action that would make his village, Sandalankawa prosperous and self-contained.</p>
     <p class="content">              Vincent Aiya was educated at Ananda College, Colombo in keeping with his Buddhist background. On completion of his education he went back to live in the village. He commenced the programme of village upliftment by personally contributing towards the rice milling project.</p>
     <p class="content">              With the money received from his father he set up this rice milling project and got the farmers to do the pre-milling operations before bringing the seasoned paddy to the mill to convert it into rice for the consumers.  He also established a coconut producers&rsquo; Co-operative Society in October 1939 which consisted of 13 small and medium coconut growers.  Further, with the land and money received from his father he set up a copra drying kiln and fortnightly they were able to send one ton of copra to Colombo by bullock cart. </p>
@@ -136,5 +142,19 @@ const blogsData = [
     <p class="content">              He was popular among the staff and the executives in the Bank. After a lapse of time he realised that things were not moving as he expected. Therefore, instead of continuing to stay and create unpleasantness he resigned quietly and went back to the village where he belonged.</p>
     <p class="content">              Vincent Aiya&rsquo;s dedication to his fellow countrymen was an end in itself and not a vehicle in quest of power, money or position. His goal was the eradication of poverty, ignorance and disease, beginning with his village. After his death on August 23, 1985 the People&rsquo;s Bank put up the quarters for the nurses of the General Hospital in Borella in his memory; a fitting tribute to a dedicated man and a great patriot. If we had more of such people this country would have been a paradise.</p>
     <p><i>Gunaratne, B. H. (Sunday, August 26, 2007). Title of the article. Sunday Times. <a href="https://www.sundaytimes.lk/070826/Plus/pls6.html">Click Here</a></i></p>`,
+  },
+  {
+    id: 5,
+    title: "“ශ්‍රීධර පුදහර” පසුසටහන...",
+    date: "22 Apr, 2024",
+    // category: "",
+    image: "images/blog/5/blog5.jpg",
+    summary:
+      "මෙරට ප්‍රමුඛතම සමුපකාරිකයාගේ 118 වන ජන්ම දිනය පසුගිය මාර්තු 29 දිනට යෙදී තිබුනද එය සැමරීමට සිදුවූයේ ඊට පසු දිනයි. ඊට ආසන්නතම හේතුව වූයේ එදිනටම යෙදී තිබුන පාස්කු....",
+    content: `<p>මෙරට ප්‍රමුඛතම සමුපකාරිකයාගේ 118 වන ජන්ම දිනය පසුගිය මාර්තු 29 දිනට යෙදී තිබුනද එය සැමරීමට සිදුවූයේ ඊට පසු දිනයි. ඊට ආසන්නතම හේතුව වූයේ එදිනටම යෙදී තිබුන පාස්කු දිනය සමරන සුබසිංහයන් කෙරේ භක්ත්‍යාදරිත ප්‍රදේශවාසී කතෝලික හා එම පවුල් වලට සම්බන්ධ පිරිස් වල ඉල්ලීම ද සැලකීමට ගෙනයි. </p>
+    <p>වින්සන්ට් සුබසිංහයන්ගේ මෙකී ගුණ සැමරුම ගැන කීමේදී  එතුමන්ගේ උදාර සංකල්පයක් මත බිහිවූ සඳලංකා සමුපකාර ව්‍යාපාරය, ජාතික පාසැල, සඳලංකා සමුපකාර රෝහල, සමරදිවාකර කලායතනය, සිනමාශාලාව යන ආයතන මෙම අවස්ථාවට සහසම්බන්ධ කර ගැනීම ගැනත් මේ සටහන තුළ යමක් ගැබ් කිරීම අවශ්‍ය වුවා. </p>
+    <p>මෙහි සැමරුම් පරිශ්‍රය වූයේ සඳලංකා විවිධ සේවා සමුපකාර සමිති බලධාරීන් සිය කැමැත්තෙන්ම ලබා දුන් හා කඩිමුඩියේ පිළිසකර කර දුන් මෙරට සමුපකාර ව්‍යාපාරය මගින් ඉදි කළ පළමු සිනමාහල වූ සඳලංකාවේ “සඳලංකා” ශාලාවයි. </p><p>පෙර දැනුම් දුන් ලෙසම හරියටම අපරභාග 3 ට සැමරුම් අවස්ථාව දිග හැරුනේ “වැඩ කැමති” සුබසිංහයන්ගේ ප්‍රායෝගිකමය ජීවිතාදර්ශ වලට ගරුත්වයක් මුසු කරමින්.</p><p>සැමරුමට පාත්‍රවන සුබසිංහයන්ගේ බාල සොහොයුරු ටී.බී. සුබසිංහයන්ගේ දියණිය වූ සුවිනීතා සුබසිංහ සහ ලේලිවරුන් වන මල්කාන්ති අමරසිංහ මැණිකේ, සිරිමල් සිරිවර්ධන මැණිකේ යන මැතිනියන් ප්‍රමුඛ  සුබසිංහ පවුල්වල සාමාජිකයන් ඇතුළු සමුපකාරික ප්‍රධානීන් හා ආරාධිතයන් කැටුව ගියේ හෙළ නර්තන අංග සහ හේරි නාදය මැදින්.</p>
+    <p>ඒ් වන විටත් ශාලාවේ අසුන් ගෙන සිටි පළාතේ සමුපකාර ක්ෂේත්‍රයේ උසස්තම නිලධාරින්, සඳලංකාව නව විවිධ සේවා සමුපකාර සමිතිය, සඳලංකා පොල් නිෂ්පාදන සමුපකාර සමිතිය මෙන්ම කටුගම්පල විවිධ සේවා සමුපකාර සමිතියේ සභාපතිවරුන්, අධ්‍යක්ෂ මණ්ඩල සාමාජිකයන් ඇතුළු සියලුම නිලධාරින්, පල්ලම “සුබසිංහපුර” ජනපදවාසීන්, සුබසිංහ පවුලේ සමිප හිතෛෂින්, ප්‍රදේශවාසීන් ඇතුළු සියළු සහභාගීවන්නන් සියසුනෙන් නැගිට සුබසිංහ පවුලේ ඥාතීන් පිළිගැනීමට එක් වූයේ නිරායාසයෙන්.</p>
+    <p>වැඩසටහන් ඉදිරිපත් කිරීම භාරවූ ජාතික රූපවාහිනියේ රූප රාමු වලින් අප නෙත නිතර ගැටෙන ශාලිකාගේ නිජබිමත් සඳලංකාවට ආසන්න ප්‍රදේශය වීමත් ඇය ජන්මය ලබා ඇත්තේ සඳලංකා සමුපකාර රෝහලේ වීම මෙම අපූරු වියමන ශක්තිමත් කරන සාක්ෂියක් වුනා.</p><p>සඳලංකා මධ්‍ය විදුහලේ ආචාර්යවරයෙකු වූ ධනුෂ්ක තරුණ කලාකරුවාගේ ඇගිලි තුඩු අතරින් නිර්මාණිත සුබසිංහයන්ගේ ජීවමාන රුවට සමාන උඩු කය  පිලිරුවට මල් මාලාවක් පලඳවා, පුෂ්පෝපහාර දැක්ම පවුලේ ආසන්නතම ඥාතීන්ගේ සුරතින් සංකේතාත්මකව සිදු කළද එදින ශාලාව අරක් ගෙන සිටි සුබසිංහ නෑදෑ පරපුර ඇතුළු සියළු දෙනා ඒ් අවස්ථාවේ හුනස්නෙන් නැගී පල කලේද තම හද පත්ලේ කැකෑරෙන කෘතගුණත්වය නිහඩව පල කිරීමේ සංකේතයක් ලෙසින්.</p><p>මෙදින වැඩම කර සිටි හෙන්ඩියගල ශ්‍රී සුනන්දාරාම විහාරාධිපති ගරු යාලේගම අනුරුද්ධ හිමි ඇතුළු ගරුතර මහා සංඝරත්නය සහ කුලියාපිටිය දිසා නායක, නාලවලාන ශාන්ත මිඛායෙල් කතෝලික දේවස්ථානයේ මීසම් පාලක නිහාල් ඔ්බ්‍රිස් පියතුමා හා එහි සහායක පියතුමන්ගේ සපැමිණීම සුබසිංහයන් විසින් කවදත් ගරුකළ ආගමික එකමුතුබව ජීවමාන කරන සංකේතයක් ලෙසින්.</p><p>ඉන් ඔබ්බට ගොස් එකී ගරු විහාරාධිපති හිමියන් සුබසිංහයන් සමීපව ඇසුරු කිරීමට තරම් භාග්‍යවන්තවීමත් ගරු මීසම් පාලක පියතුමා සඳලංකා සමුපකාර රෝහලේ ජන්මය ලද පළමු පිරිමි දරු උපත වීමත් විශේෂිත වුවා.</p>`,
   },
 ];
